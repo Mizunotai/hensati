@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B69D2FF71AF517FA00440A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF61AF517FA00440A78 /* main.m */; };
+		B69D2FFA1AF517FA00440A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF91AF517FA00440A78 /* AppDelegate.m */; };
+		B69D30001AF517FA00440A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69D2FFE1AF517FA00440A78 /* Main.storyboard */; };
+		B69D30021AF517FA00440A78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69D30011AF517FA00440A78 /* Images.xcassets */; };
+		B69D30051AF517FA00440A78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69D30031AF517FA00440A78 /* LaunchScreen.xib */; };
+		B69D30111AF517FA00440A78 /* koukouhensatiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30101AF517FA00440A78 /* koukouhensatiTests.m */; };
+		B69D30311AF5181E00440A78 /* 東京偏差値表.csv in Resources */ = {isa = PBXBuildFile; fileRef = B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */; };
+		B69D30321AF5181E00440A78 /* 東京私立高偏差値表 in Resources */ = {isa = PBXBuildFile; fileRef = B69D301B1AF5181E00440A78 /* 東京私立高偏差値表 */; };
+		B69D30331AF5181E00440A78 /* 東京公立高偏差値表.csv in Resources */ = {isa = PBXBuildFile; fileRef = B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */; };
+		B69D30341AF5181E00440A78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D301D1AF5181E00440A78 /* ViewController.m */; };
+		B69D30351AF5181E00440A78 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D301F1AF5181E00440A78 /* MenuViewController.m */; };
+		B69D30361AF5181E00440A78 /* BFPaperCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30231AF5181E00440A78 /* BFPaperCheckbox.m */; };
+		B69D30371AF5181E00440A78 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30261AF5181E00440A78 /* SVIndefiniteAnimatedView.m */; };
+		B69D30381AF5181E00440A78 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B69D30281AF5181E00440A78 /* SVProgressHUD.bundle */; };
+		B69D30391AF5181E00440A78 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D302A1AF5181E00440A78 /* SVProgressHUD.m */; };
+		B69D303A1AF5181E00440A78 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302C1AF5181E00440A78 /* LICENSE.md */; };
+		B69D303B1AF5181E00440A78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302D1AF5181E00440A78 /* README.md */; };
+		B69D303C1AF5181E00440A78 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B69D300B1AF517FA00440A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B69D2FE91AF517F900440A78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69D2FF01AF517F900440A78;
+			remoteInfo = koukouhensati;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B69D2FF11AF517F900440A78 /* koukouhensati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koukouhensati.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69D2FF51AF517F900440A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69D2FF61AF517FA00440A78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B69D2FF81AF517FA00440A78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B69D2FF91AF517FA00440A78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B69D2FFF1AF517FA00440A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B69D30011AF517FA00440A78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B69D30041AF517FA00440A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B69D300A1AF517FA00440A78 /* koukouhensatiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = koukouhensatiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69D300F1AF517FA00440A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69D30101AF517FA00440A78 /* koukouhensatiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = koukouhensatiTests.m; sourceTree = "<group>"; };
+		B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京偏差値表.csv"; sourceTree = "<group>"; };
+		B69D301B1AF5181E00440A78 /* 東京私立高偏差値表 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京私立高偏差値表"; sourceTree = "<group>"; };
+		B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京公立高偏差値表.csv"; sourceTree = "<group>"; };
+		B69D301D1AF5181E00440A78 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B69D301E1AF5181E00440A78 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B69D301F1AF5181E00440A78 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		B69D30201AF5181E00440A78 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		B69D30221AF5181E00440A78 /* BFPaperCheckbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperCheckbox.h; sourceTree = "<group>"; };
+		B69D30231AF5181E00440A78 /* BFPaperCheckbox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperCheckbox.m; sourceTree = "<group>"; };
+		B69D30251AF5181E00440A78 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		B69D30261AF5181E00440A78 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		B69D30271AF5181E00440A78 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		B69D30281AF5181E00440A78 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B69D30291AF5181E00440A78 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		B69D302A1AF5181E00440A78 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		B69D302C1AF5181E00440A78 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		B69D302D1AF5181E00440A78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B69D302F1AF5181E00440A78 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
+		B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B69D2FEE1AF517F900440A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69D30071AF517FA00440A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B69D2FE81AF517F900440A78 = {
+			isa = PBXGroup;
+			children = (
+				B69D2FF31AF517F900440A78 /* koukouhensati */,
+				B69D300D1AF517FA00440A78 /* koukouhensatiTests */,
+				B69D2FF21AF517F900440A78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B69D2FF21AF517F900440A78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B69D2FF11AF517F900440A78 /* koukouhensati.app */,
+				B69D300A1AF517FA00440A78 /* koukouhensatiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B69D2FF31AF517F900440A78 /* koukouhensati */ = {
+			isa = PBXGroup;
+			children = (
+				B69D30211AF5181E00440A78 /* Library */,
+				B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */,
+				B69D301B1AF5181E00440A78 /* 東京私立高偏差値表 */,
+				B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */,
+				B69D301D1AF5181E00440A78 /* ViewController.m */,
+				B69D301E1AF5181E00440A78 /* ViewController.h */,
+				B69D301F1AF5181E00440A78 /* MenuViewController.m */,
+				B69D30201AF5181E00440A78 /* MenuViewController.h */,
+				B69D2FF81AF517FA00440A78 /* AppDelegate.h */,
+				B69D2FF91AF517FA00440A78 /* AppDelegate.m */,
+				B69D2FFE1AF517FA00440A78 /* Main.storyboard */,
+				B69D30011AF517FA00440A78 /* Images.xcassets */,
+				B69D30031AF517FA00440A78 /* LaunchScreen.xib */,
+				B69D2FF41AF517F900440A78 /* Supporting Files */,
+			);
+			path = koukouhensati;
+			sourceTree = "<group>";
+		};
+		B69D2FF41AF517F900440A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B69D2FF51AF517F900440A78 /* Info.plist */,
+				B69D2FF61AF517FA00440A78 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B69D300D1AF517FA00440A78 /* koukouhensatiTests */ = {
+			isa = PBXGroup;
+			children = (
+				B69D30101AF517FA00440A78 /* koukouhensatiTests.m */,
+				B69D300E1AF517FA00440A78 /* Supporting Files */,
+			);
+			path = koukouhensatiTests;
+			sourceTree = "<group>";
+		};
+		B69D300E1AF517FA00440A78 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B69D300F1AF517FA00440A78 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B69D30211AF5181E00440A78 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B69D303D1AF5182F00440A78 /* BFPaperCheckBox */,
+				B69D30241AF5181E00440A78 /* SVProgressHUD */,
+				B69D302B1AF5181E00440A78 /* UIColor+BFPaperColors */,
+			);
+			name = Library;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B69D30241AF5181E00440A78 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B69D30251AF5181E00440A78 /* SVIndefiniteAnimatedView.h */,
+				B69D30261AF5181E00440A78 /* SVIndefiniteAnimatedView.m */,
+				B69D30271AF5181E00440A78 /* SVProgressHUD-Prefix.pch */,
+				B69D30281AF5181E00440A78 /* SVProgressHUD.bundle */,
+				B69D30291AF5181E00440A78 /* SVProgressHUD.h */,
+				B69D302A1AF5181E00440A78 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		B69D302B1AF5181E00440A78 /* UIColor+BFPaperColors */ = {
+			isa = PBXGroup;
+			children = (
+				B69D302C1AF5181E00440A78 /* LICENSE.md */,
+				B69D302D1AF5181E00440A78 /* README.md */,
+				B69D302E1AF5181E00440A78 /* UIColor+BFPaperColors */,
+			);
+			path = "UIColor+BFPaperColors";
+			sourceTree = "<group>";
+		};
+		B69D302E1AF5181E00440A78 /* UIColor+BFPaperColors */ = {
+			isa = PBXGroup;
+			children = (
+				B69D302F1AF5181E00440A78 /* UIColor+BFPaperColors.h */,
+				B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */,
+			);
+			path = "UIColor+BFPaperColors";
+			sourceTree = "<group>";
+		};
+		B69D303D1AF5182F00440A78 /* BFPaperCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				B69D30221AF5181E00440A78 /* BFPaperCheckbox.h */,
+				B69D30231AF5181E00440A78 /* BFPaperCheckbox.m */,
+			);
+			name = BFPaperCheckBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B69D2FF01AF517F900440A78 /* koukouhensati */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69D30141AF517FA00440A78 /* Build configuration list for PBXNativeTarget "koukouhensati" */;
+			buildPhases = (
+				B69D2FED1AF517F900440A78 /* Sources */,
+				B69D2FEE1AF517F900440A78 /* Frameworks */,
+				B69D2FEF1AF517F900440A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = koukouhensati;
+			productName = koukouhensati;
+			productReference = B69D2FF11AF517F900440A78 /* koukouhensati.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B69D30091AF517FA00440A78 /* koukouhensatiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69D30171AF517FA00440A78 /* Build configuration list for PBXNativeTarget "koukouhensatiTests" */;
+			buildPhases = (
+				B69D30061AF517FA00440A78 /* Sources */,
+				B69D30071AF517FA00440A78 /* Frameworks */,
+				B69D30081AF517FA00440A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B69D300C1AF517FA00440A78 /* PBXTargetDependency */,
+			);
+			name = koukouhensatiTests;
+			productName = koukouhensatiTests;
+			productReference = B69D300A1AF517FA00440A78 /* koukouhensatiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B69D2FE91AF517F900440A78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Taiki;
+				TargetAttributes = {
+					B69D2FF01AF517F900440A78 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B69D30091AF517FA00440A78 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = B69D2FF01AF517F900440A78;
+					};
+				};
+			};
+			buildConfigurationList = B69D2FEC1AF517F900440A78 /* Build configuration list for PBXProject "koukouhensati" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B69D2FE81AF517F900440A78;
+			productRefGroup = B69D2FF21AF517F900440A78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69D2FF01AF517F900440A78 /* koukouhensati */,
+				B69D30091AF517FA00440A78 /* koukouhensatiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B69D2FEF1AF517F900440A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69D30381AF5181E00440A78 /* SVProgressHUD.bundle in Resources */,
+				B69D30001AF517FA00440A78 /* Main.storyboard in Resources */,
+				B69D30321AF5181E00440A78 /* 東京私立高偏差値表 in Resources */,
+				B69D30051AF517FA00440A78 /* LaunchScreen.xib in Resources */,
+				B69D30311AF5181E00440A78 /* 東京偏差値表.csv in Resources */,
+				B69D30331AF5181E00440A78 /* 東京公立高偏差値表.csv in Resources */,
+				B69D30021AF517FA00440A78 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69D30081AF517FA00440A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B69D2FED1AF517F900440A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69D30341AF5181E00440A78 /* ViewController.m in Sources */,
+				B69D2FFA1AF517FA00440A78 /* AppDelegate.m in Sources */,
+				B69D2FF71AF517FA00440A78 /* main.m in Sources */,
+				B69D30391AF5181E00440A78 /* SVProgressHUD.m in Sources */,
+				B69D303C1AF5181E00440A78 /* UIColor+BFPaperColors.m in Sources */,
+				B69D303A1AF5181E00440A78 /* LICENSE.md in Sources */,
+				B69D30361AF5181E00440A78 /* BFPaperCheckbox.m in Sources */,
+				B69D303B1AF5181E00440A78 /* README.md in Sources */,
+				B69D30351AF5181E00440A78 /* MenuViewController.m in Sources */,
+				B69D30371AF5181E00440A78 /* SVIndefiniteAnimatedView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69D30061AF517FA00440A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69D30111AF517FA00440A78 /* koukouhensatiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B69D300C1AF517FA00440A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B69D2FF01AF517F900440A78 /* koukouhensati */;
+			targetProxy = B69D300B1AF517FA00440A78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B69D2FFE1AF517FA00440A78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69D2FFF1AF517FA00440A78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B69D30031AF517FA00440A78 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69D30041AF517FA00440A78 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B69D30121AF517FA00440A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B69D30131AF517FA00440A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B69D30151AF517FA00440A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = koukouhensati/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B69D30161AF517FA00440A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = koukouhensati/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B69D30181AF517FA00440A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = koukouhensatiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/koukouhensati.app/koukouhensati";
+			};
+			name = Debug;
+		};
+		B69D30191AF517FA00440A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = koukouhensatiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/koukouhensati.app/koukouhensati";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B69D2FEC1AF517F900440A78 /* Build configuration list for PBXProject "koukouhensati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69D30121AF517FA00440A78 /* Debug */,
+				B69D30131AF517FA00440A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69D30141AF517FA00440A78 /* Build configuration list for PBXNativeTarget "koukouhensati" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69D30151AF517FA00440A78 /* Debug */,
+				B69D30161AF517FA00440A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B69D30171AF517FA00440A78 /* Build configuration list for PBXNativeTarget "koukouhensatiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69D30181AF517FA00440A78 /* Debug */,
+				B69D30191AF517FA00440A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B69D2FE91AF517F900440A78 /* Project object */;
+}
