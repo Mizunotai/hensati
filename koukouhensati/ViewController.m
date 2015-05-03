@@ -29,7 +29,8 @@
     if (taiki == 0) {
         taiki = 3;
     }
-     NSLog(@"table:%d",taiki);
+    
+    
     switch (taiki) {
         case 1:
             csvFile = [[NSBundle mainBundle] pathForResource:@"東京公立高偏差値表" ofType:@"csv"];
@@ -61,6 +62,7 @@
     }
     
     [table reloadData];
+    NSLog(@"table:%d",taiki);
 }
 /**
  * テーブルのセルの数を返す

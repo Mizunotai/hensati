@@ -28,15 +28,15 @@
 
 
 -(IBAction)back{
-    if (_checkBox.isChecked == YES) {
+    if (_checkBox.isChecked) {
         taiki =1;
         [self dismissViewControllerAnimated:YES completion:nil];
         
-    }else if (_checkBox2.isChecked == YES){
+    }else if (_checkBox2.isChecked){
         taiki=2;
         [self dismissViewControllerAnimated:YES completion:nil];
         
-    }else if (_checkBox3.isChecked == YES){
+    }else if (_checkBox3.isChecked){
         taiki =3;
         [self dismissViewControllerAnimated:YES completion:nil];
     }else{
