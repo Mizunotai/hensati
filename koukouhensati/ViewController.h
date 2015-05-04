@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MenuViewController.h"
+#import "SVProgressHUD.h"
+int taiki;
 @interface ViewController: UIViewController
 <UITableViewDataSource,UITableViewDelegate>
 {

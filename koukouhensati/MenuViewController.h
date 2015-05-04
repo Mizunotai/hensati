@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BFPaperCheckbox.h"
-int taiki;
+#import "ViewController.h"
 @interface MenuViewController : UIViewController
 @property BFPaperCheckbox *checkBox;
 @property BFPaperCheckbox *checkBox2;

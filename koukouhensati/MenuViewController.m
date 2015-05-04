@@ -45,8 +45,10 @@
         [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"選択されてません"
                                   delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
     [alert show];
+        
+        
 }
-
+    NSLog(@"%@",_checkBox);
 }
 
 - (void)didReceiveMemoryWarning {

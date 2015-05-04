@@ -25,36 +25,38 @@
     table.delegate = self;
     table.dataSource = self;
     
-   
-    if (taiki == 0) {
-        taiki = 3;
-    }
     
     
-    switch (taiki) {
-        case 1:
-            csvFile = [[NSBundle mainBundle] pathForResource:@"東京公立高偏差値表" ofType:@"csv"];
-
-            break;
-        case 2:
-            csvFile = [[NSBundle mainBundle] pathForResource:@"東京私立高偏差値表" ofType:@"csv"];
-
-            break;
-        case 3:
-            csvFile = [[NSBundle mainBundle] pathForResource:@"東京偏差値表" ofType:@"csv"];
-
-            break;
-        
-    }
     
   
+
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    NSLog(@"table:%d",taiki);
+
+    if (taiki == 1) {
+        csvFile =[[NSBundle mainBundle] pathForResource:@"東京公立高偏差値表" ofType:@"csv"];
+    }else if (taiki == 2){
+        csvFile =[[NSBundle mainBundle] pathForResource:@"東京私立高偏差値表" ofType:@"csv"];
+        
+    }else if (taiki == 3){
+        csvFile =[[NSBundle mainBundle] pathForResource:@"東京偏差値表" ofType:@"csv"];
+    }
+    
+    
     csvData = [NSData dataWithContentsOfFile:csvFile];
     csv = [[NSString alloc] initWithData:csvData encoding:NSUTF8StringEncoding];
     
     lines= [csv componentsSeparatedByString:@"\n"];
+
+    
     if (!nameArray) {
         nameArray = [NSMutableArray new];
         
+    }else{
+        [nameArray removeAllObjects]; 
     }
     for (NSString *row in lines) {
         [nameArray addObject:row];
@@ -62,13 +64,15 @@
     }
     
     [table reloadData];
-    NSLog(@"table:%d",taiki);
+
 }
+
 /**
  * テーブルのセルの数を返す
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    
     return nameArray.count;
 }
 
@@ -102,7 +106,11 @@
 }
 
 
-
+-(IBAction)idou{
+    MenuViewController *menuVC =[self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+    
+    [self presentViewController:menuVC animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
