@@ -27,21 +27,131 @@
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
     barButton.title = @"戻る";
     self.navigationItem.backBarButtonItem = barButton;
+
+    self.picker.delegate = self;
+    self.picker.dataSource =self;
+    
+    nameArray = [NSArray arrayWithObjects:
+                 @"北海道"
+                 ,@"青森"
+                 ,@"岩手"
+                 ,@"宮城"
+                 ,@"秋田"
+                 ,@"山形"
+                 ,@"福島"
+                 ,@"茨城"
+                 ,@"栃木"
+                 ,@"群馬"
+                 ,@"埼玉"
+                 ,@"千葉"
+                 ,@"東京"
+                 ,@"神奈川"
+                 ,@"新潟"
+                 ,@"富山"
+                 ,@"石川"
+                 ,@"福井"
+                 ,@"山梨"
+                 ,@"長野"
+                 ,@"岐阜"
+                 ,@"静岡"
+                 ,@"愛知"
+                 ,@"三重"
+                 ,@"滋賀"
+                 ,@"京都"
+                 ,@"大阪"
+                 ,@"兵庫"
+                 ,@"奈良"
+                 ,@"和歌山"
+                 ,@"鳥取"
+                 ,@"島根"
+                 ,@"岡山"
+                 ,@"広島"
+                 ,@"山口"
+                 ,@"徳島"
+                 ,@"香川"
+                 ,@"愛媛"
+                 ,@"高知"
+                 ,@"福岡"
+                 ,@"佐賀"
+                 ,@"長崎"
+                 ,@"熊本"
+                 ,@"大分"
+                 ,@"宮城"
+                 ,@"鹿児島"
+                 ,@"沖縄", nil];
+}
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return nameArray.count;
+}
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return [nameArray objectAtIndex:row];
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSInteger selectedRow = [pickerView selectedRowInComponent:0];
+    NSLog(@"%ld",selectedRow);
+    
+    mizuno = selectedRow + 1 ;
+    NSLog(@"mizuno:%d",mizuno);
     
 }
+
 
 -(IBAction)back{
     if (_checkBox.isChecked) {
         taiki =1;
-        [self dismissViewControllerAnimated:YES completion:nil];
+
+        if (_checkBox2.isChecked) {
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else if (_checkBox3.isChecked){
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else{
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
         
     }else if (_checkBox2.isChecked){
-        taiki=2;
-        [self dismissViewControllerAnimated:YES completion:nil];
         
-    }else if (_checkBox3.isChecked){
-        taiki =3;
+        taiki=2;
+        
+        if (_checkBox.isChecked) {
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else if (_checkBox3.isChecked){
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else{
         [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    }else if (_checkBox3.isChecked){
+       
+        
+        taiki =3;
+        if (_checkBox.isChecked) {
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else if (_checkBox2.isChecked){
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    
     }else{
         
         UIAlertView *alert =
@@ -49,9 +159,12 @@
                                   delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
     [alert show];
         
+     
         
 }
-    NSLog(@"%@",_checkBox);
+    if (pow == 0){
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

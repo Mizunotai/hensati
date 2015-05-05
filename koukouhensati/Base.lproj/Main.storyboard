@@ -119,12 +119,18 @@
                                     <navigationItem title="Title" id="z1N-yz-eFD"/>
                                 </items>
                             </navigationBar>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fco-Q2-Ohi">
+                                <rect key="frame" x="0.0" y="97" width="375" height="162"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="picker" destination="fco-Q2-Ohi" id="Kei-gx-bcI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5E-0k-y6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

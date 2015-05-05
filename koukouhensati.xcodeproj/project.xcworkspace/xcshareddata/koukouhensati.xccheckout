@@ -12,6 +12,8 @@
 	<dict>
 		<key>997819843C22AA02D6ACB92EA0EEC726045F61D0</key>
 		<string>https://github.com/Mizunotai/hensati.git</string>
+		<key>BF1589EF895CA196D9F15BA9A1E78CD1A24E1F8D</key>
+		<string>https://github.com/Mizunotai/csv.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>koukouhensati.xcodeproj</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>997819843C22AA02D6ACB92EA0EEC726045F61D0</key>
 		<string>../..</string>
+		<key>BF1589EF895CA196D9F15BA9A1E78CD1A24E1F8D</key>
+		<string>../../koukouhensati/%E9%AB%98%E6%A0%A1csv/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Mizunotai/hensati.git</string>
@@ -28,6 +32,14 @@
 	<string>997819843C22AA02D6ACB92EA0EEC726045F61D0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF1589EF895CA196D9F15BA9A1E78CD1A24E1F8D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E9%AB%98%E6%A0%A1csv</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

@@ -13,8 +13,6 @@
 		B69D30021AF517FA00440A78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69D30011AF517FA00440A78 /* Images.xcassets */; };
 		B69D30051AF517FA00440A78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69D30031AF517FA00440A78 /* LaunchScreen.xib */; };
 		B69D30111AF517FA00440A78 /* koukouhensatiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30101AF517FA00440A78 /* koukouhensatiTests.m */; };
-		B69D30311AF5181E00440A78 /* 東京偏差値表.csv in Resources */ = {isa = PBXBuildFile; fileRef = B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */; };
-		B69D30331AF5181E00440A78 /* 東京公立高偏差値表.csv in Resources */ = {isa = PBXBuildFile; fileRef = B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */; };
 		B69D30341AF5181E00440A78 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D301D1AF5181E00440A78 /* ViewController.m */; };
 		B69D30351AF5181E00440A78 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D301F1AF5181E00440A78 /* MenuViewController.m */; };
 		B69D30361AF5181E00440A78 /* BFPaperCheckbox.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30231AF5181E00440A78 /* BFPaperCheckbox.m */; };
@@ -25,7 +23,148 @@
 		B69D303B1AF5181E00440A78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302D1AF5181E00440A78 /* README.md */; };
 		B69D303C1AF5181E00440A78 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */; };
 		B6BA5DB01AF73572004A5CEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */; };
-		B6C542591AF71FD000E878DD /* 東京私立高偏差値表.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */; };
+		B6BA5E491AF918E1004A5CEE /* 1,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DB61AF918E1004A5CEE /* 1,1.csv */; };
+		B6BA5E4A1AF918E1004A5CEE /* 1,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DB71AF918E1004A5CEE /* 1,2.csv */; };
+		B6BA5E4B1AF918E1004A5CEE /* 1,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DB81AF918E1004A5CEE /* 1,3.csv */; };
+		B6BA5E4C1AF918E1004A5CEE /* 2,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DB91AF918E1004A5CEE /* 2,1.csv */; };
+		B6BA5E4D1AF918E1004A5CEE /* 2,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DBA1AF918E1004A5CEE /* 2,2.csv */; };
+		B6BA5E4E1AF918E1004A5CEE /* 2,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DBB1AF918E1004A5CEE /* 2,3.csv */; };
+		B6BA5E4F1AF918E1004A5CEE /* 3,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DBC1AF918E1004A5CEE /* 3,1.csv */; };
+		B6BA5E501AF918E1004A5CEE /* 3,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DBD1AF918E1004A5CEE /* 3,2.csv */; };
+		B6BA5E511AF918E1004A5CEE /* 3,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DBE1AF918E1004A5CEE /* 3,3.csv */; };
+		B6BA5E521AF918E1004A5CEE /* 4,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DBF1AF918E1004A5CEE /* 4,1.csv */; };
+		B6BA5E531AF918E1004A5CEE /* 4,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC01AF918E1004A5CEE /* 4,2.csv */; };
+		B6BA5E541AF918E1004A5CEE /* 4,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC11AF918E1004A5CEE /* 4,3.csv */; };
+		B6BA5E551AF918E1004A5CEE /* 5,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC21AF918E1004A5CEE /* 5,1.csv */; };
+		B6BA5E561AF918E1004A5CEE /* 5,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC31AF918E1004A5CEE /* 5,2.csv */; };
+		B6BA5E571AF918E1004A5CEE /* 5,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC41AF918E1004A5CEE /* 5,3.csv */; };
+		B6BA5E581AF918E1004A5CEE /* 6,1csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC51AF918E1004A5CEE /* 6,1csv */; };
+		B6BA5E591AF918E1004A5CEE /* 6,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC61AF918E1004A5CEE /* 6,2.csv */; };
+		B6BA5E5A1AF918E1004A5CEE /* 6,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC71AF918E1004A5CEE /* 6,3.csv */; };
+		B6BA5E5B1AF918E1004A5CEE /* 7,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC81AF918E1004A5CEE /* 7,1.csv */; };
+		B6BA5E5C1AF918E1004A5CEE /* 7,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DC91AF918E1004A5CEE /* 7,2.csv */; };
+		B6BA5E5D1AF918E1004A5CEE /* 7,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DCA1AF918E1004A5CEE /* 7,3.csv */; };
+		B6BA5E5E1AF918E1004A5CEE /* 10,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DCC1AF918E1004A5CEE /* 10,1.csv */; };
+		B6BA5E5F1AF918E1004A5CEE /* 10,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DCD1AF918E1004A5CEE /* 10,2.csv */; };
+		B6BA5E601AF918E1004A5CEE /* 10,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DCE1AF918E1004A5CEE /* 10,3.csv */; };
+		B6BA5E611AF918E1004A5CEE /* 11,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DCF1AF918E1004A5CEE /* 11,1.csv */; };
+		B6BA5E621AF918E1004A5CEE /* 11,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD01AF918E1004A5CEE /* 11,2.csv */; };
+		B6BA5E631AF918E1004A5CEE /* 11,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD11AF918E1004A5CEE /* 11,3.csv */; };
+		B6BA5E641AF918E1004A5CEE /* 12,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD21AF918E1004A5CEE /* 12,1.csv */; };
+		B6BA5E651AF918E1004A5CEE /* 12,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD31AF918E1004A5CEE /* 12,2.csv */; };
+		B6BA5E661AF918E1004A5CEE /* 12,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD41AF918E1004A5CEE /* 12,3.csv */; };
+		B6BA5E671AF918E1004A5CEE /* 13,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD51AF918E1004A5CEE /* 13,1.csv */; };
+		B6BA5E681AF918E1004A5CEE /* 13,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD61AF918E1004A5CEE /* 13,2.csv */; };
+		B6BA5E691AF918E1004A5CEE /* 13,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD71AF918E1004A5CEE /* 13,3.csv */; };
+		B6BA5E6A1AF918E1004A5CEE /* 14,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD81AF918E1004A5CEE /* 14,1.csv */; };
+		B6BA5E6B1AF918E1004A5CEE /* 14,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DD91AF918E1004A5CEE /* 14,2.csv */; };
+		B6BA5E6C1AF918E1004A5CEE /* 14,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DDA1AF918E1004A5CEE /* 14,3.csv */; };
+		B6BA5E6D1AF918E1004A5CEE /* 8,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DDB1AF918E1004A5CEE /* 8,1.csv */; };
+		B6BA5E6E1AF918E1004A5CEE /* 8,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DDC1AF918E1004A5CEE /* 8,2.csv */; };
+		B6BA5E6F1AF918E1004A5CEE /* 8,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DDD1AF918E1004A5CEE /* 8,3.csv */; };
+		B6BA5E701AF918E1004A5CEE /* 9,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DDE1AF918E1004A5CEE /* 9,1.csv */; };
+		B6BA5E711AF918E1004A5CEE /* 9,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DDF1AF918E1004A5CEE /* 9,2.csv */; };
+		B6BA5E721AF918E1004A5CEE /* 9,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE01AF918E1004A5CEE /* 9,3.csv */; };
+		B6BA5E731AF918E1004A5CEE /* 15,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE21AF918E1004A5CEE /* 15,1.csv */; };
+		B6BA5E741AF918E1004A5CEE /* 15,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE31AF918E1004A5CEE /* 15,2.csv */; };
+		B6BA5E751AF918E1004A5CEE /* 15,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE41AF918E1004A5CEE /* 15,3.csv */; };
+		B6BA5E761AF918E1004A5CEE /* 16,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE51AF918E1004A5CEE /* 16,1.csv */; };
+		B6BA5E771AF918E1004A5CEE /* 16,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE61AF918E1004A5CEE /* 16,2.csv */; };
+		B6BA5E781AF918E1004A5CEE /* 16,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE71AF918E1004A5CEE /* 16,3.csv */; };
+		B6BA5E791AF918E1004A5CEE /* 17,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE81AF918E1004A5CEE /* 17,1.csv */; };
+		B6BA5E7A1AF918E1004A5CEE /* 17,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DE91AF918E1004A5CEE /* 17,2.csv */; };
+		B6BA5E7B1AF918E1004A5CEE /* 17,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DEA1AF918E1004A5CEE /* 17,3.csv */; };
+		B6BA5E7C1AF918E1004A5CEE /* 18,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DEB1AF918E1004A5CEE /* 18,1.csv */; };
+		B6BA5E7D1AF918E1004A5CEE /* 18,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DEC1AF918E1004A5CEE /* 18,2.csv */; };
+		B6BA5E7E1AF918E1004A5CEE /* 18,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DED1AF918E1004A5CEE /* 18,3.csv */; };
+		B6BA5E7F1AF918E1004A5CEE /* 19,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DEE1AF918E1004A5CEE /* 19,1.csv */; };
+		B6BA5E801AF918E1004A5CEE /* 19,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DEF1AF918E1004A5CEE /* 19,2.csv */; };
+		B6BA5E811AF918E1004A5CEE /* 19,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF01AF918E1004A5CEE /* 19,3.csv */; };
+		B6BA5E821AF918E1004A5CEE /* 20,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF11AF918E1004A5CEE /* 20,1.csv */; };
+		B6BA5E831AF918E1004A5CEE /* 20,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF21AF918E1004A5CEE /* 20,2.csv */; };
+		B6BA5E841AF918E1004A5CEE /* 20,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF31AF918E1004A5CEE /* 20,3.csv */; };
+		B6BA5E851AF918E1004A5CEE /* 21,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF41AF918E1004A5CEE /* 21,1.csv */; };
+		B6BA5E861AF918E1004A5CEE /* 21,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF51AF918E1004A5CEE /* 21,2.csv */; };
+		B6BA5E871AF918E1004A5CEE /* 21,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF61AF918E1004A5CEE /* 21,3.csv */; };
+		B6BA5E881AF918E1004A5CEE /* 22,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF71AF918E1004A5CEE /* 22,1.csv */; };
+		B6BA5E891AF918E1004A5CEE /* 22,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF81AF918E1004A5CEE /* 22,2.csv */; };
+		B6BA5E8A1AF918E1004A5CEE /* 22,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DF91AF918E1004A5CEE /* 22,3.csv */; };
+		B6BA5E8B1AF918E1004A5CEE /* 23,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DFA1AF918E1004A5CEE /* 23,1.csv */; };
+		B6BA5E8C1AF918E1004A5CEE /* 23,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DFB1AF918E1004A5CEE /* 23,2.csv */; };
+		B6BA5E8D1AF918E1004A5CEE /* 23,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DFC1AF918E1004A5CEE /* 23,3.csv */; };
+		B6BA5E8E1AF918E1004A5CEE /* 24,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DFE1AF918E1004A5CEE /* 24,1.csv */; };
+		B6BA5E8F1AF918E1004A5CEE /* 24,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5DFF1AF918E1004A5CEE /* 24,2.csv */; };
+		B6BA5E901AF918E1004A5CEE /* 24,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E001AF918E1004A5CEE /* 24,3.csv */; };
+		B6BA5E911AF918E1004A5CEE /* 25,1.cs in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E011AF918E1004A5CEE /* 25,1.cs */; };
+		B6BA5E921AF918E1004A5CEE /* 25,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E021AF918E1004A5CEE /* 25,1.csv */; };
+		B6BA5E931AF918E1004A5CEE /* 25,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E031AF918E1004A5CEE /* 25,2.csv */; };
+		B6BA5E941AF918E1004A5CEE /* 25,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E041AF918E1004A5CEE /* 25,3.csv */; };
+		B6BA5E951AF918E1004A5CEE /* 26,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E051AF918E1004A5CEE /* 26,1.csv */; };
+		B6BA5E961AF918E1004A5CEE /* 26,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E061AF918E1004A5CEE /* 26,2.csv */; };
+		B6BA5E971AF918E1004A5CEE /* 26,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E071AF918E1004A5CEE /* 26,3.csv */; };
+		B6BA5E981AF918E1004A5CEE /* 27,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E081AF918E1004A5CEE /* 27,1.csv */; };
+		B6BA5E991AF918E1004A5CEE /* 27,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E091AF918E1004A5CEE /* 27,2.csv */; };
+		B6BA5E9A1AF918E1004A5CEE /* 27,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E0A1AF918E1004A5CEE /* 27,3.csv */; };
+		B6BA5E9B1AF918E1004A5CEE /* 28,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E0B1AF918E1004A5CEE /* 28,1.csv */; };
+		B6BA5E9C1AF918E1004A5CEE /* 28,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E0C1AF918E1004A5CEE /* 28,2.csv */; };
+		B6BA5E9D1AF918E1004A5CEE /* 28,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E0D1AF918E1004A5CEE /* 28,3.csv */; };
+		B6BA5E9E1AF918E1004A5CEE /* 29,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E0E1AF918E1004A5CEE /* 29,1.csv */; };
+		B6BA5E9F1AF918E1004A5CEE /* 29,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E0F1AF918E1004A5CEE /* 29,2.csv */; };
+		B6BA5EA01AF918E1004A5CEE /* 29,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E101AF918E1004A5CEE /* 29,3.csv */; };
+		B6BA5EA11AF918E1004A5CEE /* 30,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E111AF918E1004A5CEE /* 30,1.csv */; };
+		B6BA5EA21AF918E1004A5CEE /* 30,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E121AF918E1004A5CEE /* 30,2.csv */; };
+		B6BA5EA31AF918E1004A5CEE /* 30,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E131AF918E1004A5CEE /* 30,3.csv */; };
+		B6BA5EA41AF918E1004A5CEE /* 31,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E151AF918E1004A5CEE /* 31,1.csv */; };
+		B6BA5EA51AF918E1004A5CEE /* 31,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E161AF918E1004A5CEE /* 31,2.csv */; };
+		B6BA5EA61AF918E1004A5CEE /* 31,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E171AF918E1004A5CEE /* 31,3.csv */; };
+		B6BA5EA71AF918E1004A5CEE /* 32,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E181AF918E1004A5CEE /* 32,1.csv */; };
+		B6BA5EA81AF918E1004A5CEE /* 32,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E191AF918E1004A5CEE /* 32,2.csv */; };
+		B6BA5EA91AF918E1004A5CEE /* 32,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E1A1AF918E1004A5CEE /* 32,3.csv */; };
+		B6BA5EAA1AF918E1004A5CEE /* 33,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E1B1AF918E1004A5CEE /* 33,1.csv */; };
+		B6BA5EAB1AF918E1004A5CEE /* 33,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E1C1AF918E1004A5CEE /* 33,2.csv */; };
+		B6BA5EAC1AF918E1004A5CEE /* 33,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E1D1AF918E1004A5CEE /* 33,3.csv */; };
+		B6BA5EAD1AF918E1004A5CEE /* 34,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E1E1AF918E1004A5CEE /* 34,1.csv */; };
+		B6BA5EAE1AF918E1004A5CEE /* 34,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E1F1AF918E1004A5CEE /* 34,2.csv */; };
+		B6BA5EAF1AF918E1004A5CEE /* 34,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E201AF918E1004A5CEE /* 34,3.csv */; };
+		B6BA5EB01AF918E1004A5CEE /* 35,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E211AF918E1004A5CEE /* 35,1.csv */; };
+		B6BA5EB11AF918E1004A5CEE /* 35,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E221AF918E1004A5CEE /* 35,2.csv */; };
+		B6BA5EB21AF918E1004A5CEE /* 35,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E231AF918E1004A5CEE /* 35,3.csv */; };
+		B6BA5EB31AF918E1004A5CEE /* 36,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E241AF918E1004A5CEE /* 36,1.csv */; };
+		B6BA5EB41AF918E1004A5CEE /* 36,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E251AF918E1004A5CEE /* 36,2.csv */; };
+		B6BA5EB51AF918E1004A5CEE /* 36,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E261AF918E1004A5CEE /* 36,3.csv */; };
+		B6BA5EB61AF918E1004A5CEE /* 37,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E271AF918E1004A5CEE /* 37,1.csv */; };
+		B6BA5EB71AF918E1004A5CEE /* 37,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E281AF918E1004A5CEE /* 37,2.csv */; };
+		B6BA5EB81AF918E1004A5CEE /* 37,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E291AF918E1004A5CEE /* 37,3.csv */; };
+		B6BA5EB91AF918E1004A5CEE /* 38,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E2A1AF918E1004A5CEE /* 38,1.csv */; };
+		B6BA5EBA1AF918E1004A5CEE /* 38,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E2B1AF918E1004A5CEE /* 38,2.csv */; };
+		B6BA5EBB1AF918E1004A5CEE /* 38,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E2C1AF918E1004A5CEE /* 38,3.csv */; };
+		B6BA5EBC1AF918E1004A5CEE /* 39,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E2D1AF918E1004A5CEE /* 39,1.csv */; };
+		B6BA5EBD1AF918E1004A5CEE /* 39,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E2E1AF918E1004A5CEE /* 39,2.csv */; };
+		B6BA5EBE1AF918E1004A5CEE /* 39,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E2F1AF918E1004A5CEE /* 39,3.csv */; };
+		B6BA5EBF1AF918E1004A5CEE /* 40,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E311AF918E1004A5CEE /* 40,1.csv */; };
+		B6BA5EC01AF918E1004A5CEE /* 40,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E321AF918E1004A5CEE /* 40,2.csv */; };
+		B6BA5EC11AF918E1004A5CEE /* 40,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E331AF918E1004A5CEE /* 40,3.csv */; };
+		B6BA5EC21AF918E1004A5CEE /* 41,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E341AF918E1004A5CEE /* 41,1.csv */; };
+		B6BA5EC31AF918E1004A5CEE /* 41,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E351AF918E1004A5CEE /* 41,2.csv */; };
+		B6BA5EC41AF918E1004A5CEE /* 41,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E361AF918E1004A5CEE /* 41,3.csv */; };
+		B6BA5EC51AF918E1004A5CEE /* 42,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E371AF918E1004A5CEE /* 42,1.csv */; };
+		B6BA5EC61AF918E1004A5CEE /* 42,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E381AF918E1004A5CEE /* 42,2.csv */; };
+		B6BA5EC71AF918E1004A5CEE /* 42,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E391AF918E1004A5CEE /* 42,3.csv */; };
+		B6BA5EC81AF918E1004A5CEE /* 43,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E3A1AF918E1004A5CEE /* 43,1.csv */; };
+		B6BA5EC91AF918E1004A5CEE /* 43,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E3B1AF918E1004A5CEE /* 43,2.csv */; };
+		B6BA5ECA1AF918E1004A5CEE /* 43,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E3C1AF918E1004A5CEE /* 43,3.csv */; };
+		B6BA5ECB1AF918E1004A5CEE /* 44,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E3D1AF918E1004A5CEE /* 44,1.csv */; };
+		B6BA5ECC1AF918E1004A5CEE /* 44,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E3E1AF918E1004A5CEE /* 44,2.csv */; };
+		B6BA5ECD1AF918E1004A5CEE /* 44,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E3F1AF918E1004A5CEE /* 44,3.csv */; };
+		B6BA5ECE1AF918E1004A5CEE /* 45,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E401AF918E1004A5CEE /* 45,1.csv */; };
+		B6BA5ECF1AF918E1004A5CEE /* 45,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E411AF918E1004A5CEE /* 45,2.csv */; };
+		B6BA5ED01AF918E1004A5CEE /* 45,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E421AF918E1004A5CEE /* 45,3.csv */; };
+		B6BA5ED11AF918E1004A5CEE /* 46,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E431AF918E1004A5CEE /* 46,1.csv */; };
+		B6BA5ED21AF918E1004A5CEE /* 46,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E441AF918E1004A5CEE /* 46,2.csv */; };
+		B6BA5ED31AF918E1004A5CEE /* 46,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E451AF918E1004A5CEE /* 46,3.csv */; };
+		B6BA5ED41AF918E1004A5CEE /* 47,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E461AF918E1004A5CEE /* 47,1.csv */; };
+		B6BA5ED51AF918E1004A5CEE /* 47,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E471AF918E1004A5CEE /* 47,2.csv */; };
+		B6BA5ED61AF918E1004A5CEE /* 47,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5E481AF918E1004A5CEE /* 47,3.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +189,6 @@
 		B69D300A1AF517FA00440A78 /* koukouhensatiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = koukouhensatiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69D300F1AF517FA00440A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69D30101AF517FA00440A78 /* koukouhensatiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = koukouhensatiTests.m; sourceTree = "<group>"; };
-		B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京偏差値表.csv"; sourceTree = "<group>"; };
-		B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京公立高偏差値表.csv"; sourceTree = "<group>"; };
 		B69D301D1AF5181E00440A78 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B69D301E1AF5181E00440A78 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B69D301F1AF5181E00440A78 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
@@ -69,7 +206,148 @@
 		B69D302F1AF5181E00440A78 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
 		B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
 		B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京私立高偏差値表.csv"; sourceTree = "<group>"; };
+		B6BA5DB61AF918E1004A5CEE /* 1,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1,1.csv"; sourceTree = "<group>"; };
+		B6BA5DB71AF918E1004A5CEE /* 1,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1,2.csv"; sourceTree = "<group>"; };
+		B6BA5DB81AF918E1004A5CEE /* 1,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1,3.csv"; sourceTree = "<group>"; };
+		B6BA5DB91AF918E1004A5CEE /* 2,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2,1.csv"; sourceTree = "<group>"; };
+		B6BA5DBA1AF918E1004A5CEE /* 2,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2,2.csv"; sourceTree = "<group>"; };
+		B6BA5DBB1AF918E1004A5CEE /* 2,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2,3.csv"; sourceTree = "<group>"; };
+		B6BA5DBC1AF918E1004A5CEE /* 3,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3,1.csv"; sourceTree = "<group>"; };
+		B6BA5DBD1AF918E1004A5CEE /* 3,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3,2.csv"; sourceTree = "<group>"; };
+		B6BA5DBE1AF918E1004A5CEE /* 3,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3,3.csv"; sourceTree = "<group>"; };
+		B6BA5DBF1AF918E1004A5CEE /* 4,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "4,1.csv"; sourceTree = "<group>"; };
+		B6BA5DC01AF918E1004A5CEE /* 4,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "4,2.csv"; sourceTree = "<group>"; };
+		B6BA5DC11AF918E1004A5CEE /* 4,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "4,3.csv"; sourceTree = "<group>"; };
+		B6BA5DC21AF918E1004A5CEE /* 5,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5,1.csv"; sourceTree = "<group>"; };
+		B6BA5DC31AF918E1004A5CEE /* 5,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5,2.csv"; sourceTree = "<group>"; };
+		B6BA5DC41AF918E1004A5CEE /* 5,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5,3.csv"; sourceTree = "<group>"; };
+		B6BA5DC51AF918E1004A5CEE /* 6,1csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "6,1csv"; sourceTree = "<group>"; };
+		B6BA5DC61AF918E1004A5CEE /* 6,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "6,2.csv"; sourceTree = "<group>"; };
+		B6BA5DC71AF918E1004A5CEE /* 6,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "6,3.csv"; sourceTree = "<group>"; };
+		B6BA5DC81AF918E1004A5CEE /* 7,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "7,1.csv"; sourceTree = "<group>"; };
+		B6BA5DC91AF918E1004A5CEE /* 7,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "7,2.csv"; sourceTree = "<group>"; };
+		B6BA5DCA1AF918E1004A5CEE /* 7,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "7,3.csv"; sourceTree = "<group>"; };
+		B6BA5DCC1AF918E1004A5CEE /* 10,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "10,1.csv"; sourceTree = "<group>"; };
+		B6BA5DCD1AF918E1004A5CEE /* 10,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "10,2.csv"; sourceTree = "<group>"; };
+		B6BA5DCE1AF918E1004A5CEE /* 10,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "10,3.csv"; sourceTree = "<group>"; };
+		B6BA5DCF1AF918E1004A5CEE /* 11,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "11,1.csv"; sourceTree = "<group>"; };
+		B6BA5DD01AF918E1004A5CEE /* 11,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "11,2.csv"; sourceTree = "<group>"; };
+		B6BA5DD11AF918E1004A5CEE /* 11,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "11,3.csv"; sourceTree = "<group>"; };
+		B6BA5DD21AF918E1004A5CEE /* 12,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "12,1.csv"; sourceTree = "<group>"; };
+		B6BA5DD31AF918E1004A5CEE /* 12,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "12,2.csv"; sourceTree = "<group>"; };
+		B6BA5DD41AF918E1004A5CEE /* 12,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "12,3.csv"; sourceTree = "<group>"; };
+		B6BA5DD51AF918E1004A5CEE /* 13,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "13,1.csv"; sourceTree = "<group>"; };
+		B6BA5DD61AF918E1004A5CEE /* 13,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "13,2.csv"; sourceTree = "<group>"; };
+		B6BA5DD71AF918E1004A5CEE /* 13,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "13,3.csv"; sourceTree = "<group>"; };
+		B6BA5DD81AF918E1004A5CEE /* 14,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "14,1.csv"; sourceTree = "<group>"; };
+		B6BA5DD91AF918E1004A5CEE /* 14,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "14,2.csv"; sourceTree = "<group>"; };
+		B6BA5DDA1AF918E1004A5CEE /* 14,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "14,3.csv"; sourceTree = "<group>"; };
+		B6BA5DDB1AF918E1004A5CEE /* 8,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "8,1.csv"; sourceTree = "<group>"; };
+		B6BA5DDC1AF918E1004A5CEE /* 8,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "8,2.csv"; sourceTree = "<group>"; };
+		B6BA5DDD1AF918E1004A5CEE /* 8,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "8,3.csv"; sourceTree = "<group>"; };
+		B6BA5DDE1AF918E1004A5CEE /* 9,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "9,1.csv"; sourceTree = "<group>"; };
+		B6BA5DDF1AF918E1004A5CEE /* 9,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "9,2.csv"; sourceTree = "<group>"; };
+		B6BA5DE01AF918E1004A5CEE /* 9,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "9,3.csv"; sourceTree = "<group>"; };
+		B6BA5DE21AF918E1004A5CEE /* 15,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "15,1.csv"; sourceTree = "<group>"; };
+		B6BA5DE31AF918E1004A5CEE /* 15,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "15,2.csv"; sourceTree = "<group>"; };
+		B6BA5DE41AF918E1004A5CEE /* 15,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "15,3.csv"; sourceTree = "<group>"; };
+		B6BA5DE51AF918E1004A5CEE /* 16,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "16,1.csv"; sourceTree = "<group>"; };
+		B6BA5DE61AF918E1004A5CEE /* 16,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "16,2.csv"; sourceTree = "<group>"; };
+		B6BA5DE71AF918E1004A5CEE /* 16,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "16,3.csv"; sourceTree = "<group>"; };
+		B6BA5DE81AF918E1004A5CEE /* 17,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "17,1.csv"; sourceTree = "<group>"; };
+		B6BA5DE91AF918E1004A5CEE /* 17,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "17,2.csv"; sourceTree = "<group>"; };
+		B6BA5DEA1AF918E1004A5CEE /* 17,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "17,3.csv"; sourceTree = "<group>"; };
+		B6BA5DEB1AF918E1004A5CEE /* 18,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "18,1.csv"; sourceTree = "<group>"; };
+		B6BA5DEC1AF918E1004A5CEE /* 18,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "18,2.csv"; sourceTree = "<group>"; };
+		B6BA5DED1AF918E1004A5CEE /* 18,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "18,3.csv"; sourceTree = "<group>"; };
+		B6BA5DEE1AF918E1004A5CEE /* 19,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "19,1.csv"; sourceTree = "<group>"; };
+		B6BA5DEF1AF918E1004A5CEE /* 19,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "19,2.csv"; sourceTree = "<group>"; };
+		B6BA5DF01AF918E1004A5CEE /* 19,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "19,3.csv"; sourceTree = "<group>"; };
+		B6BA5DF11AF918E1004A5CEE /* 20,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20,1.csv"; sourceTree = "<group>"; };
+		B6BA5DF21AF918E1004A5CEE /* 20,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20,2.csv"; sourceTree = "<group>"; };
+		B6BA5DF31AF918E1004A5CEE /* 20,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20,3.csv"; sourceTree = "<group>"; };
+		B6BA5DF41AF918E1004A5CEE /* 21,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "21,1.csv"; sourceTree = "<group>"; };
+		B6BA5DF51AF918E1004A5CEE /* 21,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "21,2.csv"; sourceTree = "<group>"; };
+		B6BA5DF61AF918E1004A5CEE /* 21,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "21,3.csv"; sourceTree = "<group>"; };
+		B6BA5DF71AF918E1004A5CEE /* 22,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "22,1.csv"; sourceTree = "<group>"; };
+		B6BA5DF81AF918E1004A5CEE /* 22,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "22,2.csv"; sourceTree = "<group>"; };
+		B6BA5DF91AF918E1004A5CEE /* 22,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "22,3.csv"; sourceTree = "<group>"; };
+		B6BA5DFA1AF918E1004A5CEE /* 23,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "23,1.csv"; sourceTree = "<group>"; };
+		B6BA5DFB1AF918E1004A5CEE /* 23,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "23,2.csv"; sourceTree = "<group>"; };
+		B6BA5DFC1AF918E1004A5CEE /* 23,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "23,3.csv"; sourceTree = "<group>"; };
+		B6BA5DFE1AF918E1004A5CEE /* 24,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "24,1.csv"; sourceTree = "<group>"; };
+		B6BA5DFF1AF918E1004A5CEE /* 24,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "24,2.csv"; sourceTree = "<group>"; };
+		B6BA5E001AF918E1004A5CEE /* 24,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "24,3.csv"; sourceTree = "<group>"; };
+		B6BA5E011AF918E1004A5CEE /* 25,1.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "25,1.cs"; sourceTree = "<group>"; };
+		B6BA5E021AF918E1004A5CEE /* 25,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "25,1.csv"; sourceTree = "<group>"; };
+		B6BA5E031AF918E1004A5CEE /* 25,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "25,2.csv"; sourceTree = "<group>"; };
+		B6BA5E041AF918E1004A5CEE /* 25,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "25,3.csv"; sourceTree = "<group>"; };
+		B6BA5E051AF918E1004A5CEE /* 26,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "26,1.csv"; sourceTree = "<group>"; };
+		B6BA5E061AF918E1004A5CEE /* 26,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "26,2.csv"; sourceTree = "<group>"; };
+		B6BA5E071AF918E1004A5CEE /* 26,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "26,3.csv"; sourceTree = "<group>"; };
+		B6BA5E081AF918E1004A5CEE /* 27,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "27,1.csv"; sourceTree = "<group>"; };
+		B6BA5E091AF918E1004A5CEE /* 27,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "27,2.csv"; sourceTree = "<group>"; };
+		B6BA5E0A1AF918E1004A5CEE /* 27,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "27,3.csv"; sourceTree = "<group>"; };
+		B6BA5E0B1AF918E1004A5CEE /* 28,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "28,1.csv"; sourceTree = "<group>"; };
+		B6BA5E0C1AF918E1004A5CEE /* 28,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "28,2.csv"; sourceTree = "<group>"; };
+		B6BA5E0D1AF918E1004A5CEE /* 28,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "28,3.csv"; sourceTree = "<group>"; };
+		B6BA5E0E1AF918E1004A5CEE /* 29,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "29,1.csv"; sourceTree = "<group>"; };
+		B6BA5E0F1AF918E1004A5CEE /* 29,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "29,2.csv"; sourceTree = "<group>"; };
+		B6BA5E101AF918E1004A5CEE /* 29,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "29,3.csv"; sourceTree = "<group>"; };
+		B6BA5E111AF918E1004A5CEE /* 30,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "30,1.csv"; sourceTree = "<group>"; };
+		B6BA5E121AF918E1004A5CEE /* 30,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "30,2.csv"; sourceTree = "<group>"; };
+		B6BA5E131AF918E1004A5CEE /* 30,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "30,3.csv"; sourceTree = "<group>"; };
+		B6BA5E151AF918E1004A5CEE /* 31,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "31,1.csv"; sourceTree = "<group>"; };
+		B6BA5E161AF918E1004A5CEE /* 31,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "31,2.csv"; sourceTree = "<group>"; };
+		B6BA5E171AF918E1004A5CEE /* 31,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "31,3.csv"; sourceTree = "<group>"; };
+		B6BA5E181AF918E1004A5CEE /* 32,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "32,1.csv"; sourceTree = "<group>"; };
+		B6BA5E191AF918E1004A5CEE /* 32,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "32,2.csv"; sourceTree = "<group>"; };
+		B6BA5E1A1AF918E1004A5CEE /* 32,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "32,3.csv"; sourceTree = "<group>"; };
+		B6BA5E1B1AF918E1004A5CEE /* 33,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "33,1.csv"; sourceTree = "<group>"; };
+		B6BA5E1C1AF918E1004A5CEE /* 33,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "33,2.csv"; sourceTree = "<group>"; };
+		B6BA5E1D1AF918E1004A5CEE /* 33,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "33,3.csv"; sourceTree = "<group>"; };
+		B6BA5E1E1AF918E1004A5CEE /* 34,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "34,1.csv"; sourceTree = "<group>"; };
+		B6BA5E1F1AF918E1004A5CEE /* 34,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "34,2.csv"; sourceTree = "<group>"; };
+		B6BA5E201AF918E1004A5CEE /* 34,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "34,3.csv"; sourceTree = "<group>"; };
+		B6BA5E211AF918E1004A5CEE /* 35,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "35,1.csv"; sourceTree = "<group>"; };
+		B6BA5E221AF918E1004A5CEE /* 35,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "35,2.csv"; sourceTree = "<group>"; };
+		B6BA5E231AF918E1004A5CEE /* 35,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "35,3.csv"; sourceTree = "<group>"; };
+		B6BA5E241AF918E1004A5CEE /* 36,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "36,1.csv"; sourceTree = "<group>"; };
+		B6BA5E251AF918E1004A5CEE /* 36,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "36,2.csv"; sourceTree = "<group>"; };
+		B6BA5E261AF918E1004A5CEE /* 36,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "36,3.csv"; sourceTree = "<group>"; };
+		B6BA5E271AF918E1004A5CEE /* 37,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "37,1.csv"; sourceTree = "<group>"; };
+		B6BA5E281AF918E1004A5CEE /* 37,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "37,2.csv"; sourceTree = "<group>"; };
+		B6BA5E291AF918E1004A5CEE /* 37,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "37,3.csv"; sourceTree = "<group>"; };
+		B6BA5E2A1AF918E1004A5CEE /* 38,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "38,1.csv"; sourceTree = "<group>"; };
+		B6BA5E2B1AF918E1004A5CEE /* 38,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "38,2.csv"; sourceTree = "<group>"; };
+		B6BA5E2C1AF918E1004A5CEE /* 38,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "38,3.csv"; sourceTree = "<group>"; };
+		B6BA5E2D1AF918E1004A5CEE /* 39,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "39,1.csv"; sourceTree = "<group>"; };
+		B6BA5E2E1AF918E1004A5CEE /* 39,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "39,2.csv"; sourceTree = "<group>"; };
+		B6BA5E2F1AF918E1004A5CEE /* 39,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "39,3.csv"; sourceTree = "<group>"; };
+		B6BA5E311AF918E1004A5CEE /* 40,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "40,1.csv"; sourceTree = "<group>"; };
+		B6BA5E321AF918E1004A5CEE /* 40,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "40,2.csv"; sourceTree = "<group>"; };
+		B6BA5E331AF918E1004A5CEE /* 40,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "40,3.csv"; sourceTree = "<group>"; };
+		B6BA5E341AF918E1004A5CEE /* 41,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "41,1.csv"; sourceTree = "<group>"; };
+		B6BA5E351AF918E1004A5CEE /* 41,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "41,2.csv"; sourceTree = "<group>"; };
+		B6BA5E361AF918E1004A5CEE /* 41,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "41,3.csv"; sourceTree = "<group>"; };
+		B6BA5E371AF918E1004A5CEE /* 42,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "42,1.csv"; sourceTree = "<group>"; };
+		B6BA5E381AF918E1004A5CEE /* 42,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "42,2.csv"; sourceTree = "<group>"; };
+		B6BA5E391AF918E1004A5CEE /* 42,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "42,3.csv"; sourceTree = "<group>"; };
+		B6BA5E3A1AF918E1004A5CEE /* 43,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "43,1.csv"; sourceTree = "<group>"; };
+		B6BA5E3B1AF918E1004A5CEE /* 43,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "43,2.csv"; sourceTree = "<group>"; };
+		B6BA5E3C1AF918E1004A5CEE /* 43,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "43,3.csv"; sourceTree = "<group>"; };
+		B6BA5E3D1AF918E1004A5CEE /* 44,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "44,1.csv"; sourceTree = "<group>"; };
+		B6BA5E3E1AF918E1004A5CEE /* 44,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "44,2.csv"; sourceTree = "<group>"; };
+		B6BA5E3F1AF918E1004A5CEE /* 44,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "44,3.csv"; sourceTree = "<group>"; };
+		B6BA5E401AF918E1004A5CEE /* 45,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "45,1.csv"; sourceTree = "<group>"; };
+		B6BA5E411AF918E1004A5CEE /* 45,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "45,2.csv"; sourceTree = "<group>"; };
+		B6BA5E421AF918E1004A5CEE /* 45,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "45,3.csv"; sourceTree = "<group>"; };
+		B6BA5E431AF918E1004A5CEE /* 46,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "46,1.csv"; sourceTree = "<group>"; };
+		B6BA5E441AF918E1004A5CEE /* 46,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "46,2.csv"; sourceTree = "<group>"; };
+		B6BA5E451AF918E1004A5CEE /* 46,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "46,3.csv"; sourceTree = "<group>"; };
+		B6BA5E461AF918E1004A5CEE /* 47,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,1.csv"; sourceTree = "<group>"; };
+		B6BA5E471AF918E1004A5CEE /* 47,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,2.csv"; sourceTree = "<group>"; };
+		B6BA5E481AF918E1004A5CEE /* 47,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,3.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +391,7 @@
 		B69D2FF31AF517F900440A78 /* koukouhensati */ = {
 			isa = PBXGroup;
 			children = (
-				B6BA5DB11AF755AB004A5CEE /* csv */,
+				B6BA5DB41AF918E1004A5CEE /* 高校csv */,
 				B69D30211AF5181E00440A78 /* Library */,
 				B69D301E1AF5181E00440A78 /* ViewController.h */,
 				B69D301D1AF5181E00440A78 /* ViewController.m */,
@@ -207,14 +485,201 @@
 			name = BFPaperCheckBox;
 			sourceTree = "<group>";
 		};
-		B6BA5DB11AF755AB004A5CEE /* csv */ = {
+		B6BA5DB41AF918E1004A5CEE /* 高校csv */ = {
 			isa = PBXGroup;
 			children = (
-				B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */,
-				B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */,
-				B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */,
+				B6BA5DB51AF918E1004A5CEE /* 1北海道・東方 */,
+				B6BA5DCB1AF918E1004A5CEE /* 2関東 */,
+				B6BA5DE11AF918E1004A5CEE /* 3中部 */,
+				B6BA5DFD1AF918E1004A5CEE /* 4.近畿 */,
+				B6BA5E141AF918E1004A5CEE /* 5中国・四国 */,
+				B6BA5E301AF918E1004A5CEE /* 6九州・沖縄 */,
 			);
-			name = csv;
+			path = "高校csv";
+			sourceTree = "<group>";
+		};
+		B6BA5DB51AF918E1004A5CEE /* 1北海道・東方 */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA5DB61AF918E1004A5CEE /* 1,1.csv */,
+				B6BA5DB71AF918E1004A5CEE /* 1,2.csv */,
+				B6BA5DB81AF918E1004A5CEE /* 1,3.csv */,
+				B6BA5DB91AF918E1004A5CEE /* 2,1.csv */,
+				B6BA5DBA1AF918E1004A5CEE /* 2,2.csv */,
+				B6BA5DBB1AF918E1004A5CEE /* 2,3.csv */,
+				B6BA5DBC1AF918E1004A5CEE /* 3,1.csv */,
+				B6BA5DBD1AF918E1004A5CEE /* 3,2.csv */,
+				B6BA5DBE1AF918E1004A5CEE /* 3,3.csv */,
+				B6BA5DBF1AF918E1004A5CEE /* 4,1.csv */,
+				B6BA5DC01AF918E1004A5CEE /* 4,2.csv */,
+				B6BA5DC11AF918E1004A5CEE /* 4,3.csv */,
+				B6BA5DC21AF918E1004A5CEE /* 5,1.csv */,
+				B6BA5DC31AF918E1004A5CEE /* 5,2.csv */,
+				B6BA5DC41AF918E1004A5CEE /* 5,3.csv */,
+				B6BA5DC51AF918E1004A5CEE /* 6,1csv */,
+				B6BA5DC61AF918E1004A5CEE /* 6,2.csv */,
+				B6BA5DC71AF918E1004A5CEE /* 6,3.csv */,
+				B6BA5DC81AF918E1004A5CEE /* 7,1.csv */,
+				B6BA5DC91AF918E1004A5CEE /* 7,2.csv */,
+				B6BA5DCA1AF918E1004A5CEE /* 7,3.csv */,
+			);
+			path = "1北海道・東方";
+			sourceTree = "<group>";
+		};
+		B6BA5DCB1AF918E1004A5CEE /* 2関東 */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA5DCC1AF918E1004A5CEE /* 10,1.csv */,
+				B6BA5DCD1AF918E1004A5CEE /* 10,2.csv */,
+				B6BA5DCE1AF918E1004A5CEE /* 10,3.csv */,
+				B6BA5DCF1AF918E1004A5CEE /* 11,1.csv */,
+				B6BA5DD01AF918E1004A5CEE /* 11,2.csv */,
+				B6BA5DD11AF918E1004A5CEE /* 11,3.csv */,
+				B6BA5DD21AF918E1004A5CEE /* 12,1.csv */,
+				B6BA5DD31AF918E1004A5CEE /* 12,2.csv */,
+				B6BA5DD41AF918E1004A5CEE /* 12,3.csv */,
+				B6BA5DD51AF918E1004A5CEE /* 13,1.csv */,
+				B6BA5DD61AF918E1004A5CEE /* 13,2.csv */,
+				B6BA5DD71AF918E1004A5CEE /* 13,3.csv */,
+				B6BA5DD81AF918E1004A5CEE /* 14,1.csv */,
+				B6BA5DD91AF918E1004A5CEE /* 14,2.csv */,
+				B6BA5DDA1AF918E1004A5CEE /* 14,3.csv */,
+				B6BA5DDB1AF918E1004A5CEE /* 8,1.csv */,
+				B6BA5DDC1AF918E1004A5CEE /* 8,2.csv */,
+				B6BA5DDD1AF918E1004A5CEE /* 8,3.csv */,
+				B6BA5DDE1AF918E1004A5CEE /* 9,1.csv */,
+				B6BA5DDF1AF918E1004A5CEE /* 9,2.csv */,
+				B6BA5DE01AF918E1004A5CEE /* 9,3.csv */,
+			);
+			path = "2関東";
+			sourceTree = "<group>";
+		};
+		B6BA5DE11AF918E1004A5CEE /* 3中部 */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA5DE21AF918E1004A5CEE /* 15,1.csv */,
+				B6BA5DE31AF918E1004A5CEE /* 15,2.csv */,
+				B6BA5DE41AF918E1004A5CEE /* 15,3.csv */,
+				B6BA5DE51AF918E1004A5CEE /* 16,1.csv */,
+				B6BA5DE61AF918E1004A5CEE /* 16,2.csv */,
+				B6BA5DE71AF918E1004A5CEE /* 16,3.csv */,
+				B6BA5DE81AF918E1004A5CEE /* 17,1.csv */,
+				B6BA5DE91AF918E1004A5CEE /* 17,2.csv */,
+				B6BA5DEA1AF918E1004A5CEE /* 17,3.csv */,
+				B6BA5DEB1AF918E1004A5CEE /* 18,1.csv */,
+				B6BA5DEC1AF918E1004A5CEE /* 18,2.csv */,
+				B6BA5DED1AF918E1004A5CEE /* 18,3.csv */,
+				B6BA5DEE1AF918E1004A5CEE /* 19,1.csv */,
+				B6BA5DEF1AF918E1004A5CEE /* 19,2.csv */,
+				B6BA5DF01AF918E1004A5CEE /* 19,3.csv */,
+				B6BA5DF11AF918E1004A5CEE /* 20,1.csv */,
+				B6BA5DF21AF918E1004A5CEE /* 20,2.csv */,
+				B6BA5DF31AF918E1004A5CEE /* 20,3.csv */,
+				B6BA5DF41AF918E1004A5CEE /* 21,1.csv */,
+				B6BA5DF51AF918E1004A5CEE /* 21,2.csv */,
+				B6BA5DF61AF918E1004A5CEE /* 21,3.csv */,
+				B6BA5DF71AF918E1004A5CEE /* 22,1.csv */,
+				B6BA5DF81AF918E1004A5CEE /* 22,2.csv */,
+				B6BA5DF91AF918E1004A5CEE /* 22,3.csv */,
+				B6BA5DFA1AF918E1004A5CEE /* 23,1.csv */,
+				B6BA5DFB1AF918E1004A5CEE /* 23,2.csv */,
+				B6BA5DFC1AF918E1004A5CEE /* 23,3.csv */,
+			);
+			path = "3中部";
+			sourceTree = "<group>";
+		};
+		B6BA5DFD1AF918E1004A5CEE /* 4.近畿 */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA5DFE1AF918E1004A5CEE /* 24,1.csv */,
+				B6BA5DFF1AF918E1004A5CEE /* 24,2.csv */,
+				B6BA5E001AF918E1004A5CEE /* 24,3.csv */,
+				B6BA5E011AF918E1004A5CEE /* 25,1.cs */,
+				B6BA5E021AF918E1004A5CEE /* 25,1.csv */,
+				B6BA5E031AF918E1004A5CEE /* 25,2.csv */,
+				B6BA5E041AF918E1004A5CEE /* 25,3.csv */,
+				B6BA5E051AF918E1004A5CEE /* 26,1.csv */,
+				B6BA5E061AF918E1004A5CEE /* 26,2.csv */,
+				B6BA5E071AF918E1004A5CEE /* 26,3.csv */,
+				B6BA5E081AF918E1004A5CEE /* 27,1.csv */,
+				B6BA5E091AF918E1004A5CEE /* 27,2.csv */,
+				B6BA5E0A1AF918E1004A5CEE /* 27,3.csv */,
+				B6BA5E0B1AF918E1004A5CEE /* 28,1.csv */,
+				B6BA5E0C1AF918E1004A5CEE /* 28,2.csv */,
+				B6BA5E0D1AF918E1004A5CEE /* 28,3.csv */,
+				B6BA5E0E1AF918E1004A5CEE /* 29,1.csv */,
+				B6BA5E0F1AF918E1004A5CEE /* 29,2.csv */,
+				B6BA5E101AF918E1004A5CEE /* 29,3.csv */,
+				B6BA5E111AF918E1004A5CEE /* 30,1.csv */,
+				B6BA5E121AF918E1004A5CEE /* 30,2.csv */,
+				B6BA5E131AF918E1004A5CEE /* 30,3.csv */,
+			);
+			path = "4.近畿";
+			sourceTree = "<group>";
+		};
+		B6BA5E141AF918E1004A5CEE /* 5中国・四国 */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA5E151AF918E1004A5CEE /* 31,1.csv */,
+				B6BA5E161AF918E1004A5CEE /* 31,2.csv */,
+				B6BA5E171AF918E1004A5CEE /* 31,3.csv */,
+				B6BA5E181AF918E1004A5CEE /* 32,1.csv */,
+				B6BA5E191AF918E1004A5CEE /* 32,2.csv */,
+				B6BA5E1A1AF918E1004A5CEE /* 32,3.csv */,
+				B6BA5E1B1AF918E1004A5CEE /* 33,1.csv */,
+				B6BA5E1C1AF918E1004A5CEE /* 33,2.csv */,
+				B6BA5E1D1AF918E1004A5CEE /* 33,3.csv */,
+				B6BA5E1E1AF918E1004A5CEE /* 34,1.csv */,
+				B6BA5E1F1AF918E1004A5CEE /* 34,2.csv */,
+				B6BA5E201AF918E1004A5CEE /* 34,3.csv */,
+				B6BA5E211AF918E1004A5CEE /* 35,1.csv */,
+				B6BA5E221AF918E1004A5CEE /* 35,2.csv */,
+				B6BA5E231AF918E1004A5CEE /* 35,3.csv */,
+				B6BA5E241AF918E1004A5CEE /* 36,1.csv */,
+				B6BA5E251AF918E1004A5CEE /* 36,2.csv */,
+				B6BA5E261AF918E1004A5CEE /* 36,3.csv */,
+				B6BA5E271AF918E1004A5CEE /* 37,1.csv */,
+				B6BA5E281AF918E1004A5CEE /* 37,2.csv */,
+				B6BA5E291AF918E1004A5CEE /* 37,3.csv */,
+				B6BA5E2A1AF918E1004A5CEE /* 38,1.csv */,
+				B6BA5E2B1AF918E1004A5CEE /* 38,2.csv */,
+				B6BA5E2C1AF918E1004A5CEE /* 38,3.csv */,
+				B6BA5E2D1AF918E1004A5CEE /* 39,1.csv */,
+				B6BA5E2E1AF918E1004A5CEE /* 39,2.csv */,
+				B6BA5E2F1AF918E1004A5CEE /* 39,3.csv */,
+			);
+			path = "5中国・四国";
+			sourceTree = "<group>";
+		};
+		B6BA5E301AF918E1004A5CEE /* 6九州・沖縄 */ = {
+			isa = PBXGroup;
+			children = (
+				B6BA5E311AF918E1004A5CEE /* 40,1.csv */,
+				B6BA5E321AF918E1004A5CEE /* 40,2.csv */,
+				B6BA5E331AF918E1004A5CEE /* 40,3.csv */,
+				B6BA5E341AF918E1004A5CEE /* 41,1.csv */,
+				B6BA5E351AF918E1004A5CEE /* 41,2.csv */,
+				B6BA5E361AF918E1004A5CEE /* 41,3.csv */,
+				B6BA5E371AF918E1004A5CEE /* 42,1.csv */,
+				B6BA5E381AF918E1004A5CEE /* 42,2.csv */,
+				B6BA5E391AF918E1004A5CEE /* 42,3.csv */,
+				B6BA5E3A1AF918E1004A5CEE /* 43,1.csv */,
+				B6BA5E3B1AF918E1004A5CEE /* 43,2.csv */,
+				B6BA5E3C1AF918E1004A5CEE /* 43,3.csv */,
+				B6BA5E3D1AF918E1004A5CEE /* 44,1.csv */,
+				B6BA5E3E1AF918E1004A5CEE /* 44,2.csv */,
+				B6BA5E3F1AF918E1004A5CEE /* 44,3.csv */,
+				B6BA5E401AF918E1004A5CEE /* 45,1.csv */,
+				B6BA5E411AF918E1004A5CEE /* 45,2.csv */,
+				B6BA5E421AF918E1004A5CEE /* 45,3.csv */,
+				B6BA5E431AF918E1004A5CEE /* 46,1.csv */,
+				B6BA5E441AF918E1004A5CEE /* 46,2.csv */,
+				B6BA5E451AF918E1004A5CEE /* 46,3.csv */,
+				B6BA5E461AF918E1004A5CEE /* 47,1.csv */,
+				B6BA5E471AF918E1004A5CEE /* 47,2.csv */,
+				B6BA5E481AF918E1004A5CEE /* 47,3.csv */,
+			);
+			path = "6九州・沖縄";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,13 +762,152 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C542591AF71FD000E878DD /* 東京私立高偏差値表.csv in Resources */,
+				B6BA5EA81AF918E1004A5CEE /* 32,2.csv in Resources */,
+				B6BA5E5C1AF918E1004A5CEE /* 7,2.csv in Resources */,
+				B6BA5E611AF918E1004A5CEE /* 11,1.csv in Resources */,
+				B6BA5EBA1AF918E1004A5CEE /* 38,2.csv in Resources */,
+				B6BA5E541AF918E1004A5CEE /* 4,3.csv in Resources */,
+				B6BA5ECC1AF918E1004A5CEE /* 44,2.csv in Resources */,
+				B6BA5EC71AF918E1004A5CEE /* 42,3.csv in Resources */,
+				B6BA5E571AF918E1004A5CEE /* 5,3.csv in Resources */,
+				B6BA5E5F1AF918E1004A5CEE /* 10,2.csv in Resources */,
+				B6BA5E721AF918E1004A5CEE /* 9,3.csv in Resources */,
+				B6BA5E4C1AF918E1004A5CEE /* 2,1.csv in Resources */,
+				B6BA5E791AF918E1004A5CEE /* 17,1.csv in Resources */,
+				B6BA5EC61AF918E1004A5CEE /* 42,2.csv in Resources */,
+				B6BA5E8A1AF918E1004A5CEE /* 22,3.csv in Resources */,
+				B6BA5E621AF918E1004A5CEE /* 11,2.csv in Resources */,
+				B6BA5ECA1AF918E1004A5CEE /* 43,3.csv in Resources */,
+				B6BA5E8D1AF918E1004A5CEE /* 23,3.csv in Resources */,
+				B6BA5E601AF918E1004A5CEE /* 10,3.csv in Resources */,
+				B6BA5ED41AF918E1004A5CEE /* 47,1.csv in Resources */,
+				B6BA5E8F1AF918E1004A5CEE /* 24,2.csv in Resources */,
+				B6BA5E4E1AF918E1004A5CEE /* 2,3.csv in Resources */,
+				B6BA5E811AF918E1004A5CEE /* 19,3.csv in Resources */,
+				B6BA5EA41AF918E1004A5CEE /* 31,1.csv in Resources */,
+				B6BA5E951AF918E1004A5CEE /* 26,1.csv in Resources */,
+				B6BA5ECF1AF918E1004A5CEE /* 45,2.csv in Resources */,
+				B6BA5EB91AF918E1004A5CEE /* 38,1.csv in Resources */,
+				B6BA5E831AF918E1004A5CEE /* 20,2.csv in Resources */,
+				B6BA5EBC1AF918E1004A5CEE /* 39,1.csv in Resources */,
+				B6BA5EA61AF918E1004A5CEE /* 31,3.csv in Resources */,
+				B6BA5EC31AF918E1004A5CEE /* 41,2.csv in Resources */,
+				B6BA5E4A1AF918E1004A5CEE /* 1,2.csv in Resources */,
+				B6BA5E6F1AF918E1004A5CEE /* 8,3.csv in Resources */,
+				B6BA5EC41AF918E1004A5CEE /* 41,3.csv in Resources */,
+				B6BA5E581AF918E1004A5CEE /* 6,1csv in Resources */,
+				B6BA5E511AF918E1004A5CEE /* 3,3.csv in Resources */,
+				B6BA5E8C1AF918E1004A5CEE /* 23,2.csv in Resources */,
+				B6BA5E801AF918E1004A5CEE /* 19,2.csv in Resources */,
+				B6BA5E9D1AF918E1004A5CEE /* 28,3.csv in Resources */,
+				B6BA5EC01AF918E1004A5CEE /* 40,2.csv in Resources */,
+				B6BA5E9C1AF918E1004A5CEE /* 28,2.csv in Resources */,
+				B6BA5ED51AF918E1004A5CEE /* 47,2.csv in Resources */,
+				B6BA5E851AF918E1004A5CEE /* 21,1.csv in Resources */,
+				B6BA5E9A1AF918E1004A5CEE /* 27,3.csv in Resources */,
+				B6BA5ED61AF918E1004A5CEE /* 47,3.csv in Resources */,
+				B6BA5E4F1AF918E1004A5CEE /* 3,1.csv in Resources */,
+				B6BA5E751AF918E1004A5CEE /* 15,3.csv in Resources */,
+				B6BA5E691AF918E1004A5CEE /* 13,3.csv in Resources */,
+				B6BA5EB61AF918E1004A5CEE /* 37,1.csv in Resources */,
+				B6BA5EAA1AF918E1004A5CEE /* 33,1.csv in Resources */,
+				B6BA5EB81AF918E1004A5CEE /* 37,3.csv in Resources */,
+				B6BA5ECB1AF918E1004A5CEE /* 44,1.csv in Resources */,
+				B6BA5E521AF918E1004A5CEE /* 4,1.csv in Resources */,
+				B6BA5E701AF918E1004A5CEE /* 9,1.csv in Resources */,
+				B6BA5E6C1AF918E1004A5CEE /* 14,3.csv in Resources */,
+				B6BA5E971AF918E1004A5CEE /* 26,3.csv in Resources */,
+				B6BA5E9B1AF918E1004A5CEE /* 28,1.csv in Resources */,
+				B6BA5ECD1AF918E1004A5CEE /* 44,3.csv in Resources */,
+				B6BA5E651AF918E1004A5CEE /* 12,2.csv in Resources */,
+				B6BA5E911AF918E1004A5CEE /* 25,1.cs in Resources */,
+				B6BA5E6A1AF918E1004A5CEE /* 14,1.csv in Resources */,
+				B6BA5E781AF918E1004A5CEE /* 16,3.csv in Resources */,
 				B69D30381AF5181E00440A78 /* SVProgressHUD.bundle in Resources */,
+				B6BA5E5E1AF918E1004A5CEE /* 10,1.csv in Resources */,
+				B6BA5EBF1AF918E1004A5CEE /* 40,1.csv in Resources */,
+				B6BA5EA31AF918E1004A5CEE /* 30,3.csv in Resources */,
+				B6BA5E841AF918E1004A5CEE /* 20,3.csv in Resources */,
+				B6BA5EB31AF918E1004A5CEE /* 36,1.csv in Resources */,
+				B6BA5E6E1AF918E1004A5CEE /* 8,2.csv in Resources */,
+				B6BA5E711AF918E1004A5CEE /* 9,2.csv in Resources */,
+				B6BA5EAB1AF918E1004A5CEE /* 33,2.csv in Resources */,
+				B6BA5E501AF918E1004A5CEE /* 3,2.csv in Resources */,
+				B6BA5E981AF918E1004A5CEE /* 27,1.csv in Resources */,
+				B6BA5E641AF918E1004A5CEE /* 12,1.csv in Resources */,
+				B6BA5EA01AF918E1004A5CEE /* 29,3.csv in Resources */,
+				B6BA5E531AF918E1004A5CEE /* 4,2.csv in Resources */,
+				B6BA5E4B1AF918E1004A5CEE /* 1,3.csv in Resources */,
+				B6BA5E931AF918E1004A5CEE /* 25,2.csv in Resources */,
+				B6BA5E7D1AF918E1004A5CEE /* 18,2.csv in Resources */,
+				B6BA5EC91AF918E1004A5CEE /* 43,2.csv in Resources */,
+				B6BA5EC51AF918E1004A5CEE /* 42,1.csv in Resources */,
+				B6BA5ED01AF918E1004A5CEE /* 45,3.csv in Resources */,
+				B6BA5E661AF918E1004A5CEE /* 12,3.csv in Resources */,
 				B69D30001AF517FA00440A78 /* Main.storyboard in Resources */,
+				B6BA5EC11AF918E1004A5CEE /* 40,3.csv in Resources */,
+				B6BA5E681AF918E1004A5CEE /* 13,2.csv in Resources */,
+				B6BA5E7F1AF918E1004A5CEE /* 19,1.csv in Resources */,
+				B6BA5EBB1AF918E1004A5CEE /* 38,3.csv in Resources */,
+				B6BA5EC81AF918E1004A5CEE /* 43,1.csv in Resources */,
+				B6BA5EAC1AF918E1004A5CEE /* 33,3.csv in Resources */,
+				B6BA5E8E1AF918E1004A5CEE /* 24,1.csv in Resources */,
+				B6BA5E7C1AF918E1004A5CEE /* 18,1.csv in Resources */,
+				B6BA5E761AF918E1004A5CEE /* 16,1.csv in Resources */,
+				B6BA5E961AF918E1004A5CEE /* 26,2.csv in Resources */,
+				B6BA5EAF1AF918E1004A5CEE /* 34,3.csv in Resources */,
+				B6BA5E741AF918E1004A5CEE /* 15,2.csv in Resources */,
+				B6BA5E731AF918E1004A5CEE /* 15,1.csv in Resources */,
+				B6BA5E901AF918E1004A5CEE /* 24,3.csv in Resources */,
+				B6BA5E881AF918E1004A5CEE /* 22,1.csv in Resources */,
+				B6BA5E5B1AF918E1004A5CEE /* 7,1.csv in Resources */,
+				B6BA5EA51AF918E1004A5CEE /* 31,2.csv in Resources */,
+				B6BA5EAE1AF918E1004A5CEE /* 34,2.csv in Resources */,
+				B6BA5EA11AF918E1004A5CEE /* 30,1.csv in Resources */,
+				B6BA5E871AF918E1004A5CEE /* 21,3.csv in Resources */,
+				B6BA5EA71AF918E1004A5CEE /* 32,1.csv in Resources */,
+				B6BA5EB21AF918E1004A5CEE /* 35,3.csv in Resources */,
 				B69D30051AF517FA00440A78 /* LaunchScreen.xib in Resources */,
-				B69D30311AF5181E00440A78 /* 東京偏差値表.csv in Resources */,
-				B69D30331AF5181E00440A78 /* 東京公立高偏差値表.csv in Resources */,
+				B6BA5ECE1AF918E1004A5CEE /* 45,1.csv in Resources */,
+				B6BA5ED11AF918E1004A5CEE /* 46,1.csv in Resources */,
+				B6BA5EAD1AF918E1004A5CEE /* 34,1.csv in Resources */,
+				B6BA5E561AF918E1004A5CEE /* 5,2.csv in Resources */,
+				B6BA5E821AF918E1004A5CEE /* 20,1.csv in Resources */,
+				B6BA5EA91AF918E1004A5CEE /* 32,3.csv in Resources */,
+				B6BA5E631AF918E1004A5CEE /* 11,3.csv in Resources */,
+				B6BA5E8B1AF918E1004A5CEE /* 23,1.csv in Resources */,
+				B6BA5E671AF918E1004A5CEE /* 13,1.csv in Resources */,
+				B6BA5E6B1AF918E1004A5CEE /* 14,2.csv in Resources */,
+				B6BA5EBE1AF918E1004A5CEE /* 39,3.csv in Resources */,
+				B6BA5ED31AF918E1004A5CEE /* 46,3.csv in Resources */,
+				B6BA5E9F1AF918E1004A5CEE /* 29,2.csv in Resources */,
+				B6BA5E7B1AF918E1004A5CEE /* 17,3.csv in Resources */,
+				B6BA5E941AF918E1004A5CEE /* 25,3.csv in Resources */,
+				B6BA5EB01AF918E1004A5CEE /* 35,1.csv in Resources */,
+				B6BA5E4D1AF918E1004A5CEE /* 2,2.csv in Resources */,
+				B6BA5E9E1AF918E1004A5CEE /* 29,1.csv in Resources */,
+				B6BA5ED21AF918E1004A5CEE /* 46,2.csv in Resources */,
+				B6BA5E891AF918E1004A5CEE /* 22,2.csv in Resources */,
+				B6BA5E7A1AF918E1004A5CEE /* 17,2.csv in Resources */,
 				B69D30021AF517FA00440A78 /* Images.xcassets in Resources */,
+				B6BA5EC21AF918E1004A5CEE /* 41,1.csv in Resources */,
+				B6BA5E7E1AF918E1004A5CEE /* 18,3.csv in Resources */,
+				B6BA5EBD1AF918E1004A5CEE /* 39,2.csv in Resources */,
+				B6BA5EB51AF918E1004A5CEE /* 36,3.csv in Resources */,
+				B6BA5EB71AF918E1004A5CEE /* 37,2.csv in Resources */,
+				B6BA5E6D1AF918E1004A5CEE /* 8,1.csv in Resources */,
+				B6BA5EB41AF918E1004A5CEE /* 36,2.csv in Resources */,
+				B6BA5E591AF918E1004A5CEE /* 6,2.csv in Resources */,
+				B6BA5EA21AF918E1004A5CEE /* 30,2.csv in Resources */,
+				B6BA5E491AF918E1004A5CEE /* 1,1.csv in Resources */,
+				B6BA5EB11AF918E1004A5CEE /* 35,2.csv in Resources */,
+				B6BA5E991AF918E1004A5CEE /* 27,2.csv in Resources */,
+				B6BA5E5A1AF918E1004A5CEE /* 6,3.csv in Resources */,
+				B6BA5E771AF918E1004A5CEE /* 16,2.csv in Resources */,
+				B6BA5E861AF918E1004A5CEE /* 21,2.csv in Resources */,
+				B6BA5E921AF918E1004A5CEE /* 25,1.csv in Resources */,
+				B6BA5E551AF918E1004A5CEE /* 5,1.csv in Resources */,
+				B6BA5E5D1AF918E1004A5CEE /* 7,3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

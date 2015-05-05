@@ -45,14 +45,16 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     NSLog(@"table:%d",taiki);
-        
+
+    NSString *string = [NSString stringWithFormat:@"%d,%d",mizuno,taiki];
     if (taiki == 1) {
-        csvFile =[[NSBundle mainBundle] pathForResource:@"東京公立高偏差値表" ofType:@"csv"];
+        
+        csvFile =[[NSBundle mainBundle] pathForResource:string ofType:@"csv"];
     }else if (taiki == 2){
-        csvFile =[[NSBundle mainBundle] pathForResource:@"東京私立高偏差値表" ofType:@"csv"];
+        csvFile =[[NSBundle mainBundle] pathForResource:string ofType:@"csv"];
         
     }else if (taiki == 3){
-        csvFile =[[NSBundle mainBundle] pathForResource:@"東京偏差値表" ofType:@"csv"];
+        csvFile =[[NSBundle mainBundle] pathForResource:string ofType:@"csv"];
     }
     
     
@@ -134,7 +136,7 @@
 }
 
 -(void)filterContentForSearchText:(NSString *)serchText scope:(NSString *)scope{
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@",serchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",serchText];
     self.serchResolt = [self.nameArrayCopy filteredArrayUsingPredicate:predicate];
 }
 
