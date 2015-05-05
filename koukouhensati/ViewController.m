@@ -15,6 +15,16 @@
     NSArray *lines;
 }
 
+@property (weak, nonatomic) IBOutlet UITableView *table;
+
+@property (weak, nonatomic) IBOutlet UISearchBar *serchBar;
+
+@property (nonatomic ,strong)NSArray *serchResolt;
+
+@property (nonatomic,strong)NSMutableArray *nameArray;
+
+@property (nonatomic,strong)NSArray *nameArrayCopy;
+
 
 @end
 
@@ -22,10 +32,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    table.delegate = self;
-    table.dataSource = self;
+    _table.delegate = self;
+    _table.dataSource = self;
     
-    
+
     
     
   
@@ -35,7 +45,7 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     NSLog(@"table:%d",taiki);
-
+        
     if (taiki == 1) {
         csvFile =[[NSBundle mainBundle] pathForResource:@"東京公立高偏差値表" ofType:@"csv"];
     }else if (taiki == 2){
@@ -52,28 +62,35 @@
     lines= [csv componentsSeparatedByString:@"\n"];
 
     
-    if (!nameArray) {
-        nameArray = [NSMutableArray new];
+    if (!_nameArray) {
+        _nameArray = [NSMutableArray new];
         
     }else{
-        [nameArray removeAllObjects]; 
+        [_nameArray removeAllObjects];
     }
     for (NSString *row in lines) {
-        [nameArray addObject:row];
+        [_nameArray addObject:row ];
+        _nameArrayCopy = [_nameArray copy];
         
     }
-    
-    [table reloadData];
+    self.serchResolt = [[NSArray alloc]init ];
 
-}
+    [_table reloadData];
+    }
 
 /**
  * テーブルのセルの数を返す
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+
     
-    return nameArray.count;
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        return self.serchResolt.count ;
+    }else{
+        return  self.nameArrayCopy.count;
+    }
+
 }
 
 /**
@@ -81,7 +98,7 @@
  */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *cellIdentifier = @"Cell";
+    static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     // セルが作成されていないか?
@@ -90,8 +107,12 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    // セルにテキストを設定
-    cell.textLabel.text = [nameArray objectAtIndex:indexPath.row];
+    if (tableView == self.searchDisplayController.searchResultsTableView) {
+        cell.textLabel.text = [self.serchResolt objectAtIndex:indexPath.row];
+    }else{
+        cell.textLabel.text = [self.nameArrayCopy objectAtIndex:indexPath.row];
+    }
+    
     
     return cell;
 }
@@ -112,9 +133,25 @@
     [self presentViewController:menuVC animated:YES completion:nil];
 }
 
+-(void)filterContentForSearchText:(NSString *)serchText scope:(NSString *)scope{
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF beginswith[c] %@",serchText];
+    self.serchResolt = [self.nameArrayCopy filteredArrayUsingPredicate:predicate];
+}
+
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    return YES;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
 
 @end

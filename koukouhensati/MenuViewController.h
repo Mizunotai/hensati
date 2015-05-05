@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "BFPaperCheckbox.h"
 #import "ViewController.h"
-@interface MenuViewController : UIViewController
+@interface MenuViewController : UIViewController{
+    IBOutlet UINavigationItem *item ;
+}
 @property BFPaperCheckbox *checkBox;
 @property BFPaperCheckbox *checkBox2;
 @property BFPaperCheckbox *checkBox3;
+
 @end

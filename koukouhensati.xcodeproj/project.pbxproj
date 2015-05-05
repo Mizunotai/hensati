@@ -24,6 +24,7 @@
 		B69D303A1AF5181E00440A78 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302C1AF5181E00440A78 /* LICENSE.md */; };
 		B69D303B1AF5181E00440A78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302D1AF5181E00440A78 /* README.md */; };
 		B69D303C1AF5181E00440A78 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */; };
+		B6BA5DB01AF73572004A5CEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */; };
 		B6C542591AF71FD000E878DD /* 東京私立高偏差値表.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		B69D302D1AF5181E00440A78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B69D302F1AF5181E00440A78 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
 		B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+		B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "東京私立高偏差値表.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6BA5DB01AF73572004A5CEE /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +94,7 @@
 		B69D2FE81AF517F900440A78 = {
 			isa = PBXGroup;
 			children = (
+				B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */,
 				B69D2FF31AF517F900440A78 /* koukouhensati */,
 				B69D300D1AF517FA00440A78 /* koukouhensatiTests */,
 				B69D2FF21AF517F900440A78 /* Products */,
@@ -109,19 +113,17 @@
 		B69D2FF31AF517F900440A78 /* koukouhensati */ = {
 			isa = PBXGroup;
 			children = (
+				B6BA5DB11AF755AB004A5CEE /* csv */,
 				B69D30211AF5181E00440A78 /* Library */,
-				B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */,
-				B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */,
-				B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */,
 				B69D301E1AF5181E00440A78 /* ViewController.h */,
 				B69D301D1AF5181E00440A78 /* ViewController.m */,
 				B69D30201AF5181E00440A78 /* MenuViewController.h */,
 				B69D301F1AF5181E00440A78 /* MenuViewController.m */,
 				B69D2FF81AF517FA00440A78 /* AppDelegate.h */,
 				B69D2FF91AF517FA00440A78 /* AppDelegate.m */,
+				B69D30031AF517FA00440A78 /* LaunchScreen.xib */,
 				B69D2FFE1AF517FA00440A78 /* Main.storyboard */,
 				B69D30011AF517FA00440A78 /* Images.xcassets */,
-				B69D30031AF517FA00440A78 /* LaunchScreen.xib */,
 				B69D2FF41AF517F900440A78 /* Supporting Files */,
 			);
 			path = koukouhensati;
@@ -203,6 +205,16 @@
 				B69D30231AF5181E00440A78 /* BFPaperCheckbox.m */,
 			);
 			name = BFPaperCheckBox;
+			sourceTree = "<group>";
+		};
+		B6BA5DB11AF755AB004A5CEE /* csv */ = {
+			isa = PBXGroup;
+			children = (
+				B69D301A1AF5181E00440A78 /* 東京偏差値表.csv */,
+				B69D301C1AF5181E00440A78 /* 東京公立高偏差値表.csv */,
+				B6C542581AF71FD000E878DD /* 東京私立高偏差値表.csv */,
+			);
+			name = csv;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

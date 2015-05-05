@@ -11,10 +11,11 @@
 #import "SVProgressHUD.h"
 int taiki;
 @interface ViewController: UIViewController
-<UITableViewDataSource,UITableViewDelegate>
+<UITableViewDataSource,UITableViewDelegate,UISearchDisplayDelegate>
 {
-    IBOutlet UITableView *table;
-    NSMutableArray *nameArray;
+    
+    
+    
 }
 
 @end

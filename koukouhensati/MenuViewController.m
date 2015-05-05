@@ -24,8 +24,11 @@
     [self.view addSubview:_checkBox2];
     [self.view addSubview:_checkBox3];
     NSLog(@"ホームda:%d",taiki);
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
+    barButton.title = @"戻る";
+    self.navigationItem.backBarButtonItem = barButton;
+    
 }
-
 
 -(IBAction)back{
     if (_checkBox.isChecked) {
