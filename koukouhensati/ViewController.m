@@ -13,6 +13,8 @@
     NSData *csvData;
     NSString *csv;
     NSArray *lines;
+    
+    NSMutableArray *farstNameArray;
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
@@ -62,7 +64,7 @@
     csv = [[NSString alloc] initWithData:csvData encoding:NSUTF8StringEncoding];
     
     lines= [csv componentsSeparatedByString:@"\n"];
-
+    
     
     if (!_nameArray) {
         _nameArray = [NSMutableArray new];
@@ -75,6 +77,24 @@
         _nameArrayCopy = [_nameArray copy];
         
     }
+    NSString *obj;
+    NSArray *items;
+    NSMutableArray *matrics;
+    farstNameArray =[NSMutableArray array];
+    matrics = [[NSMutableArray alloc]initWithCapacity:1];
+    for (obj in  lines) {
+        items =[obj componentsSeparatedByString:@","];
+        [matrics addObject:items];
+    }
+    for (int i = 0;i < [matrics count] ; i++) {
+        NSArray *temp =[matrics objectAtIndex:i];
+//        NSLog(@"高校名　=%@",[temp objectAtIndex:0]);
+    [farstNameArray addObject:[temp objectAtIndex:0]];
+//        NSLog(@"%@",farstNameArray[i]);
+        
+        
+    }
+    
     self.serchResolt = [[NSArray alloc]init ];
 
     [_table reloadData];
@@ -85,7 +105,7 @@
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+                
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return self.serchResolt.count ;
@@ -146,6 +166,18 @@
     return YES;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    NSLog(@"%ld",(long)indexPath.row);
+//    NSLog(@"中身は%@",farstNameArray[indexPath.row]);
+    string =[NSString stringWithFormat:@"%@",farstNameArray[indexPath.row]];
+    NSLog(@"%@",string);
+    //count =
+    WebViewController *webViewController =[self.storyboard instantiateViewControllerWithIdentifier:@"web"];
+    [self presentViewController:webViewController animated:YES completion:nil];
+//    NSLog(@"%lu",(unsigned long)self.nameArrayCopy.count);
+    
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

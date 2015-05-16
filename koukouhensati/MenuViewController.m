@@ -96,6 +96,8 @@
     mizuno = selectedRow + 1 ;
     NSLog(@"mizuno:%d",mizuno);
     
+    
+    
 }
 
 

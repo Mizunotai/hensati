@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MenuViewController.h"
 #import "SVProgressHUD.h"
+#import "WebViewController.h"
 int taiki;
+NSString *string;
 @interface ViewController: UIViewController
 <UITableViewDataSource,UITableViewDelegate,UISearchDisplayDelegate>
 {
