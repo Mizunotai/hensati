@@ -10,6 +10,7 @@
 #import "MenuViewController.h"
 #import "SVProgressHUD.h"
 #import "WebViewController.h"
+#import "BFPaperCheckbox.h"
 int taiki;
 NSString *string;
 @interface ViewController: UIViewController

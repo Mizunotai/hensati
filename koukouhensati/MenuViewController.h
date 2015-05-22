@@ -10,6 +10,9 @@
 #import "BFPaperCheckbox.h"
 #import "ViewController.h"
 int mizuno;
+ BFPaperCheckbox *checkBox;
+ BFPaperCheckbox *checkBox2;
+ BFPaperCheckbox *checkBox3;
 @interface MenuViewController : UIViewController
 <UIPickerViewDataSource,UIPickerViewDelegate>
 {
@@ -18,9 +21,8 @@ int mizuno;
     
     NSArray *nameArray ;
 }
-@property BFPaperCheckbox *checkBox;
-@property BFPaperCheckbox *checkBox2;
-@property BFPaperCheckbox *checkBox3;
+
+
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 
 @end

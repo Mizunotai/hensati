@@ -17,12 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _checkBox=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45,270,40,40)];
-    _checkBox2=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45, 330, 40, 40)];
-    _checkBox3=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45, 390, 40, 40)];
-    [self.view addSubview:_checkBox];
-    [self.view addSubview:_checkBox2];
-    [self.view addSubview:_checkBox3];
+    checkBox=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45,270,40,40)];
+    checkBox2=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45, 330, 40, 40)];
+    checkBox3=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45, 390, 40, 40)];
+    [self.view addSubview:checkBox];
+    [self.view addSubview:checkBox2];
+    [self.view addSubview:checkBox3];
     NSLog(@"ホームda:%d",taiki);
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
     barButton.title = @"戻る";
@@ -102,71 +102,61 @@
 
 
 -(IBAction)back{
-    if (_checkBox.isChecked) {
-        taiki =1;
-
-        if (_checkBox2.isChecked) {
-            UIAlertView *alert =
-            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
-                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-            [alert show];
-        }else if (_checkBox3.isChecked){
-            UIAlertView *alert =
-            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
-                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-            [alert show];
-        }else{
-            [self dismissViewControllerAnimated:YES completion:nil];
-        }
-        
-    }else if (_checkBox2.isChecked){
-        
-        taiki=2;
-        
-        if (_checkBox.isChecked) {
-            UIAlertView *alert =
-            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
-                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-            [alert show];
-        }else if (_checkBox3.isChecked){
-            UIAlertView *alert =
-            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
-                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-            [alert show];
-        }else{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
-    }else if (_checkBox3.isChecked){
-       
-        
-        taiki =3;
-        if (_checkBox.isChecked) {
-            UIAlertView *alert =
-            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
-                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-            [alert show];
-        }else if (_checkBox2.isChecked){
-            UIAlertView *alert =
-            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
-                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-            [alert show];
-        }else{
-        [self dismissViewControllerAnimated:YES completion:nil];
-        }
     
-    }else{
-        
-        UIAlertView *alert =
-        [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"選択されてません"
-                                  delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
-    [alert show];
-        
-     
-        
-}
-    if (pow == 0){
-        
-    }
+    
+//    if (checkBox.isChecked) {
+//        taiki =1;
+//        
+//        if (checkBox2.isChecked) {
+//            UIAlertView *alert =
+//            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+//                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+//            [alert show];
+//        }else if (checkBox3.isChecked){
+//            UIAlertView *alert =
+//            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+//                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+//            [alert show];
+//        }else{
+//            [self dismissViewControllerAnimated:YES completion:nil];
+//        }
+//        
+//    }else if (checkBox2.isChecked){
+//        
+//        taiki=2;
+//        
+//        if (checkBox.isChecked) {
+//            UIAlertView *alert =
+//            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+//                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+//            [alert show];
+//        }else if (checkBox3.isChecked){
+//            UIAlertView *alert =
+//            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+//                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+//            [alert show];
+//        }else{
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//    }
+//    }else if (checkBox3.isChecked){
+//       
+//        
+//        taiki =3;
+//        if (checkBox.isChecked) {
+//            UIAlertView *alert =
+//            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+//                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+//            [alert show];
+//        }else if (checkBox2.isChecked){
+//            UIAlertView *alert =
+//            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+//                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+//            [alert show];
+//        }else{
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//        }
+//    
+//    }
 }
 
 - (void)didReceiveMemoryWarning {

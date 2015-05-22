@@ -24,16 +24,53 @@
     NSURL *url =[NSURL URLWithString: encodeUrl];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [web loadRequest:req];
+    
+    /* 右スワイプ */
+    UISwipeGestureRecognizer* swiperightGesture =
+    [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(view_SwipeRight:)];
+    
+    // 右スワイプを認識するように設定
+    swiperightGesture.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    // ビューにジェスチャーを追加
+    [self.view addGestureRecognizer:swiperightGesture];
+    
+    /* 左スワイプ */
+    UISwipeGestureRecognizer* swipeLeftGesture =
+    [[UISwipeGestureRecognizer alloc]initWithTarget:self action:@selector(view_SwipeLeft:)];
+    
+    // 左スワイプを認識するように設定
+    swipeLeftGesture.direction = UISwipeGestureRecognizerDirectionLeft;
+    
+    // ビューにジェスチャーを追加
+    [self.view addGestureRecognizer:swipeLeftGesture];
+    
 }
-
+/**
+ * 右スワイプがされたとき
+ */
+- (void)view_SwipeRight:(UISwipeGestureRecognizer *)sender
+{
+    NSLog(@"右スワイプがされました．");
+    [web goBack];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+/**
+ * 左スワイプがされたとき
+ */
+- (void)view_SwipeLeft:(UISwipeGestureRecognizer *)sender
+{
+    NSLog(@"左スワイプがされました．");
+    [web goForward];
 }
 -(IBAction)back:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 /*
 #pragma mark - Navigation
 

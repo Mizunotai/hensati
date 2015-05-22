@@ -37,17 +37,62 @@
     _table.delegate = self;
     _table.dataSource = self;
     
-
     
     
-  
-
+    
+    
+    
     
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+    
+    if (checkBox.isChecked) {
+        taiki =1;
+        if (checkBox2.isChecked) {
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else if (checkBox3.isChecked){
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }
+    }else if(checkBox2.isChecked){
+        taiki =2;
+        
+        if (checkBox.isChecked) {
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else if (checkBox3.isChecked){
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }
+    }else if (checkBox3.isChecked){
+        taiki=3;
+        if (checkBox.isChecked) {
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }else if (checkBox2.isChecked){
+            UIAlertView *alert =
+            [[UIAlertView alloc] initWithTitle:@"お知らせ" message:@"他のが選択せれています。"
+                                      delegate:self cancelButtonTitle:@"確認" otherButtonTitles:nil];
+            [alert show];
+        }
+    }
+    
+    
+    
     NSLog(@"table:%d",taiki);
-
+    
     NSString *string = [NSString stringWithFormat:@"%d,%d",mizuno,taiki];
     if (taiki == 1) {
         
@@ -88,31 +133,33 @@
     }
     for (int i = 0;i < [matrics count] ; i++) {
         NSArray *temp =[matrics objectAtIndex:i];
-//        NSLog(@"高校名　=%@",[temp objectAtIndex:0]);
-    [farstNameArray addObject:[temp objectAtIndex:0]];
-//        NSLog(@"%@",farstNameArray[i]);
+        //        NSLog(@"高校名　=%@",[temp objectAtIndex:0]);
+        [farstNameArray addObject:[temp objectAtIndex:0]];
+        //        NSLog(@"%@",farstNameArray[i]);
         
         
     }
     
     self.serchResolt = [[NSArray alloc]init ];
-
+    
     [_table reloadData];
-    }
+    
+}
+
 
 /**
  * テーブルのセルの数を返す
  */
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-                
+    
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return self.serchResolt.count ;
     }else{
         return  self.nameArrayCopy.count;
     }
-
+    
 }
 
 /**
@@ -137,6 +184,7 @@
     
     
     return cell;
+    
 }
 
 /**
@@ -167,14 +215,14 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    NSLog(@"%ld",(long)indexPath.row);
-//    NSLog(@"中身は%@",farstNameArray[indexPath.row]);
+    //    NSLog(@"%ld",(long)indexPath.row);
+    //    NSLog(@"中身は%@",farstNameArray[indexPath.row]);
     string =[NSString stringWithFormat:@"%@",farstNameArray[indexPath.row]];
     NSLog(@"%@",string);
     //count =
     WebViewController *webViewController =[self.storyboard instantiateViewControllerWithIdentifier:@"web"];
     [self presentViewController:webViewController animated:YES completion:nil];
-//    NSLog(@"%lu",(unsigned long)self.nameArrayCopy.count);
+    //    NSLog(@"%lu",(unsigned long)self.nameArrayCopy.count);
     
     
 }
@@ -184,7 +232,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+-(void)alert:(UIAlertView*)alertView
+clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 
