@@ -27,12 +27,13 @@
                                 <rect key="frame" x="0.0" y="68" width="375" height="579"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="kcq-te-2gU">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="kcq-te-2gU">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kcq-te-2gU" id="HIb-Hq-VCO">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -61,7 +62,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="144.5" y="442.5"/>
+            <point key="canvasLocation" x="144.5" y="436.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="JMt-qP-0Do">
@@ -131,6 +132,25 @@
             </objects>
             <point key="canvasLocation" x="-323.5" y="1121.5"/>
         </scene>
+        <!--Fav View Controller-->
+        <scene sceneID="WIY-j3-gKc">
+            <objects>
+                <viewController id="CRV-tC-aHG" customClass="FavViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7lU-RQ-ZbD"/>
+                        <viewControllerLayoutGuide type="bottom" id="7a2-Mj-hPF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yJX-4z-Ce3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbr-fK-lmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281.5" y="1255.5"/>
+        </scene>
         <!--Web View Controller-->
         <scene sceneID="kAs-pd-V4Y">
             <objects>
@@ -166,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gU-el-3BG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="543.5" y="1246.5"/>
+            <point key="canvasLocation" x="789.5" y="1272.5"/>
         </scene>
     </scenes>
 </document>

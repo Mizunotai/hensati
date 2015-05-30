@@ -165,6 +165,7 @@
 		B6BA611B1B075B2B004A5CEE /* 47,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA608E1B075B2B004A5CEE /* 47,1.csv */; };
 		B6BA611C1B075B2B004A5CEE /* 47,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA608F1B075B2B004A5CEE /* 47,2.csv */; };
 		B6BA611D1B075B2B004A5CEE /* 47,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA60901B075B2B004A5CEE /* 47,3.csv */; };
+		B6CA08551B19866C00FCF5D9 /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA08541B19866C00FCF5D9 /* FavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -349,6 +350,8 @@
 		B6BA608E1B075B2B004A5CEE /* 47,1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,1.csv"; sourceTree = "<group>"; };
 		B6BA608F1B075B2B004A5CEE /* 47,2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,2.csv"; sourceTree = "<group>"; };
 		B6BA60901B075B2B004A5CEE /* 47,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,3.csv"; sourceTree = "<group>"; };
+		B6CA08531B19866C00FCF5D9 /* FavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavViewController.h; sourceTree = "<group>"; };
+		B6CA08541B19866C00FCF5D9 /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -400,6 +403,8 @@
 				B69D301F1AF5181E00440A78 /* MenuViewController.m */,
 				B6BA5ED71B073956004A5CEE /* WebViewController.h */,
 				B6BA5ED81B073956004A5CEE /* WebViewController.m */,
+				B6CA08531B19866C00FCF5D9 /* FavViewController.h */,
+				B6CA08541B19866C00FCF5D9 /* FavViewController.m */,
 				B69D2FF81AF517FA00440A78 /* AppDelegate.h */,
 				B69D2FF91AF517FA00440A78 /* AppDelegate.m */,
 				B69D30031AF517FA00440A78 /* LaunchScreen.xib */,
@@ -928,6 +933,7 @@
 			files = (
 				B69D30341AF5181E00440A78 /* ViewController.m in Sources */,
 				B69D2FFA1AF517FA00440A78 /* AppDelegate.m in Sources */,
+				B6CA08551B19866C00FCF5D9 /* FavViewController.m in Sources */,
 				B6BA5ED91B073956004A5CEE /* WebViewController.m in Sources */,
 				B69D2FF71AF517FA00440A78 /* main.m in Sources */,
 				B69D30391AF5181E00440A78 /* SVProgressHUD.m in Sources */,

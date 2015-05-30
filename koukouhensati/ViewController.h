@@ -17,9 +17,8 @@ NSString *string;
 <UITableViewDataSource,UITableViewDelegate,UISearchDisplayDelegate>
 {
     
-    
-    
 }
-
+//@property  (nonatomic) UIButton *likeButton;
+//-(IBAction)likeButtonDidPush:(id)sender;
 @end
 

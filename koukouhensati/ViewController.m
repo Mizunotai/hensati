@@ -15,6 +15,9 @@
     NSArray *lines;
     
     NSMutableArray *farstNameArray;
+    
+    UIButton *btn;
+    
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
@@ -28,9 +31,11 @@
 @property (nonatomic,strong)NSArray *nameArrayCopy;
 
 
+
 @end
 
 @implementation ViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,7 +52,9 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     
-    if (checkBox.isChecked) {
+    
+    
+        if (checkBox.isChecked) {
         taiki =1;
         if (checkBox2.isChecked) {
             UIAlertView *alert =
@@ -133,9 +140,8 @@
     }
     for (int i = 0;i < [matrics count] ; i++) {
         NSArray *temp =[matrics objectAtIndex:i];
-        //        NSLog(@"高校名　=%@",[temp objectAtIndex:0]);
+        
         [farstNameArray addObject:[temp objectAtIndex:0]];
-        //        NSLog(@"%@",farstNameArray[i]);
         
         
     }
@@ -175,21 +181,23 @@
         // セルを作成
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    
+//     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    btn.frame=CGRectMake(300, 5, 50, 50);
+    [btn addTarget:self action:@selector(btnpush:) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"fav" forState:UIControlStateNormal];
+    btn.tag = self.nameArrayCopy.count;
+    [cell addSubview:btn];
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         cell.textLabel.text = [self.serchResolt objectAtIndex:indexPath.row];
     }else{
         cell.textLabel.text = [self.nameArrayCopy objectAtIndex:indexPath.row];
     }
-    
-    
-    return cell;
+        return cell;
     
 }
 
-/**
- * セルが選択されたとき
- */
+
 
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     NSString *title = @"title";
@@ -197,11 +205,7 @@
 }
 
 
--(IBAction)idou{
-    MenuViewController *menuVC =[self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
-    
-    [self presentViewController:menuVC animated:YES completion:nil];
-}
+
 
 -(void)filterContentForSearchText:(NSString *)serchText scope:(NSString *)scope{
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",serchText];
@@ -213,16 +217,21 @@
     [self filterContentForSearchText:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
     return YES;
 }
-
+/**
+ * セルが選択されたとき
+ */
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    //    NSLog(@"%ld",(long)indexPath.row);
-    //    NSLog(@"中身は%@",farstNameArray[indexPath.row]);
+    
+    if (tableView ==  self.searchDisplayController.searchResultsTableView) {
+        string = [NSString stringWithFormat:@"%@",self.serchResolt[indexPath.row]];
+    }else{
     string =[NSString stringWithFormat:@"%@",farstNameArray[indexPath.row]];
+    }
     NSLog(@"%@",string);
-    //count =
+
     WebViewController *webViewController =[self.storyboard instantiateViewControllerWithIdentifier:@"web"];
     [self presentViewController:webViewController animated:YES completion:nil];
-    //    NSLog(@"%lu",(unsigned long)self.nameArrayCopy.count);
+    
     
     
 }
@@ -232,11 +241,17 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)alert:(UIAlertView*)alertView
+-(void)alertView:(UIAlertView*)alertView
 clickedButtonAtIndex:(NSInteger)buttonIndex {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-
+-(void)btnpush:(id)sender{
+    NSLog(@"btnpush");
+    UIButton *button = (UIButton *)sender;
+    UITableViewCell *cell = (UITableViewCell *)[button superview];
+    int row = [self.table indexPathForCell:cell].row;
+    NSLog(@"indexpath?:%d",row);
+    
+}
 
 @end
