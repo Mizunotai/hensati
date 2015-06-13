@@ -18,7 +18,7 @@
     
     UIButton *btn;
     
-}
+    }
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
 
@@ -32,6 +32,7 @@
 
 
 
+
 @end
 
 @implementation ViewController
@@ -42,7 +43,7 @@
     _table.delegate = self;
     _table.dataSource = self;
     
-    
+    mut = [[NSMutableArray alloc]init];
     
     
     
@@ -98,7 +99,7 @@
     
     
     
-    NSLog(@"table:%d",taiki);
+//    NSLog(@"table:%d",taiki);
     
     NSString *string = [NSString stringWithFormat:@"%d,%d",mizuno,taiki];
     if (taiki == 1) {
@@ -142,13 +143,14 @@
         NSArray *temp =[matrics objectAtIndex:i];
         
         [farstNameArray addObject:[temp objectAtIndex:0]];
-        
-        
+      
     }
     
-    self.serchResolt = [[NSArray alloc]init ];
+    self.serchResolt = [[NSArray alloc]init];
     
     [_table reloadData];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finish) name:UIApplicationWillResignActiveNotification object:nil];
     
 }
 
@@ -188,6 +190,7 @@
     [btn setTitle:@"fav" forState:UIControlStateNormal];
     btn.tag = self.nameArrayCopy.count;
     [cell addSubview:btn];
+    
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         cell.textLabel.text = [self.serchResolt objectAtIndex:indexPath.row];
     }else{
@@ -227,7 +230,7 @@
     }else{
     string =[NSString stringWithFormat:@"%@",farstNameArray[indexPath.row]];
     }
-    NSLog(@"%@",string);
+//    NSLog(@"%@",string);
 
     WebViewController *webViewController =[self.storyboard instantiateViewControllerWithIdentifier:@"web"];
     [self presentViewController:webViewController animated:YES completion:nil];
@@ -246,12 +249,29 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(void)btnpush:(id)sender{
-    NSLog(@"btnpush");
+
     UIButton *button = (UIButton *)sender;
     UITableViewCell *cell = (UITableViewCell *)[button superview];
-    int row = [self.table indexPathForCell:cell].row;
-    NSLog(@"indexpath?:%d",row);
+    int nukky = [_table indexPathForCell:cell].row;
+    NSString *str = [NSString stringWithFormat:@"%@",[self.nameArrayCopy objectAtIndex:nukky]];
     
-}
+    [mut addObject:str];
+    
+    NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
+    NSData *data =[NSKeyedArchiver archivedDataWithRootObject:mut];
+    [ud setObject:data forKey:@"key"];
+    [ud synchronize];
+
+    
+   }
+-(void)finish{
+    NSLog(@"ta");
+    NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
+    NSData *data =[NSKeyedArchiver archivedDataWithRootObject:mut];
+    [ud setObject:data forKey:@"key"];
+    [ud synchronize];
+   }
+
+
 
 @end

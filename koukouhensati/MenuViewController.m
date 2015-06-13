@@ -23,7 +23,7 @@
     [self.view addSubview:checkBox];
     [self.view addSubview:checkBox2];
     [self.view addSubview:checkBox3];
-    NSLog(@"ホームda:%d",taiki);
+//    NSLog(@"ホームda:%d",taiki);
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
     barButton.title = @"戻る";
     self.navigationItem.backBarButtonItem = barButton;
@@ -91,10 +91,10 @@
 }
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     NSInteger selectedRow = [pickerView selectedRowInComponent:0];
-    NSLog(@"%ld",selectedRow);
+//    NSLog(@"%ld",selectedRow);
     
     mizuno = selectedRow + 1 ;
-    NSLog(@"mizuno:%d",mizuno);
+//    NSLog(@"mizuno:%d",mizuno);
     
     
     

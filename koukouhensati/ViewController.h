@@ -13,6 +13,8 @@
 #import "BFPaperCheckbox.h"
 int taiki;
 NSString *string;
+NSMutableArray * mut ;
+
 @interface ViewController: UIViewController
 <UITableViewDataSource,UITableViewDelegate,UISearchDisplayDelegate>
 {
@@ -20,5 +22,6 @@ NSString *string;
 }
 //@property  (nonatomic) UIButton *likeButton;
 //-(IBAction)likeButtonDidPush:(id)sender;
+
 @end
 

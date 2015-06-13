@@ -17,8 +17,6 @@ int mizuno;
 <UIPickerViewDataSource,UIPickerViewDelegate>
 {
     
-    IBOutlet UINavigationItem *item ;
-    
     NSArray *nameArray ;
 }
 

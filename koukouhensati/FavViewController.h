@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface FavViewController : UIViewController
-
+#import "ViewController.h"
+@interface FavViewController :UIViewController
+<UITableViewDelegate,UITableViewDataSource>
 @end
