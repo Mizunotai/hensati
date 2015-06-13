@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B684226A1B2C1D1500F05FBD /* star06@2x-05.png in Resources */ = {isa = PBXBuildFile; fileRef = B68422691B2C1D1500F05FBD /* star06@2x-05.png */; };
+		B684226C1B2C1E1400F05FBD /* yellowStar@2x-05.png in Resources */ = {isa = PBXBuildFile; fileRef = B684226B1B2C1E1400F05FBD /* yellowStar@2x-05.png */; };
 		B69D2FF71AF517FA00440A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF61AF517FA00440A78 /* main.m */; };
 		B69D2FFA1AF517FA00440A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF91AF517FA00440A78 /* AppDelegate.m */; };
 		B69D30001AF517FA00440A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69D2FFE1AF517FA00440A78 /* Main.storyboard */; };
@@ -179,6 +181,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B68422691B2C1D1500F05FBD /* star06@2x-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star06@2x-05.png"; sourceTree = "<group>"; };
+		B684226B1B2C1E1400F05FBD /* yellowStar@2x-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellowStar@2x-05.png"; sourceTree = "<group>"; };
 		B69D2FF11AF517F900440A78 /* koukouhensati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koukouhensati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69D2FF51AF517F900440A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69D2FF61AF517FA00440A78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -395,6 +399,8 @@
 		B69D2FF31AF517F900440A78 /* koukouhensati */ = {
 			isa = PBXGroup;
 			children = (
+				B68422691B2C1D1500F05FBD /* star06@2x-05.png */,
+				B684226B1B2C1E1400F05FBD /* yellowStar@2x-05.png */,
 				B6BA5FFD1B075B2A004A5CEE /* 高校csvファイル */,
 				B69D30211AF5181E00440A78 /* Library */,
 				B69D301E1AF5181E00440A78 /* ViewController.h */,
@@ -779,6 +785,7 @@
 				B6BA60A21B075B2B004A5CEE /* 6,3.csv in Resources */,
 				B6BA60CE1B075B2B004A5CEE /* 21,2.csv in Resources */,
 				B6BA60CC1B075B2B004A5CEE /* 20,3.csv in Resources */,
+				B684226A1B2C1D1500F05FBD /* star06@2x-05.png in Resources */,
 				B6BA60ED1B075B2B004A5CEE /* 31,3.csv in Resources */,
 				B6BA60C31B075B2B004A5CEE /* 17,3.csv in Resources */,
 				B6BA60A01B075B2B004A5CEE /* 6,1.csv in Resources */,
@@ -815,6 +822,7 @@
 				B6BA60C41B075B2B004A5CEE /* 18,1.csv in Resources */,
 				B6BA611D1B075B2B004A5CEE /* 47,3.csv in Resources */,
 				B6BA60D61B075B2B004A5CEE /* 24,1.csv in Resources */,
+				B684226C1B2C1E1400F05FBD /* yellowStar@2x-05.png in Resources */,
 				B6BA60DC1B075B2B004A5CEE /* 26,1.csv in Resources */,
 				B6BA60951B075B2B004A5CEE /* 2,2.csv in Resources */,
 				B6BA60C81B075B2B004A5CEE /* 19,2.csv in Resources */,

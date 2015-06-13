@@ -17,7 +17,7 @@
     NSMutableArray *farstNameArray;
     
     UIButton *btn;
-    
+    UITableViewCell *cell;
     }
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
@@ -176,7 +176,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
     // セルが作成されていないか?
     if (!cell) { // yes
@@ -185,9 +185,13 @@
     }
 //     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    btn.frame=CGRectMake(300, 5, 50, 50);
+    btn.frame=CGRectMake(300, 2, 45, 45);
     [btn addTarget:self action:@selector(btnpush:) forControlEvents:UIControlEventTouchUpInside];
-    [btn setTitle:@"fav" forState:UIControlStateNormal];
+//    [btn setTitle:@"" forState:UIControlStateNormal];
+    UIImage *img =[UIImage imageNamed:@"star06@2x-05.png"];
+    
+    [btn setBackgroundImage:img forState:UIControlStateNormal];
+ 
     btn.tag = self.nameArrayCopy.count;
     [cell addSubview:btn];
     
@@ -254,15 +258,21 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     UITableViewCell *cell = (UITableViewCell *)[button superview];
     int nukky = [_table indexPathForCell:cell].row;
     NSString *str = [NSString stringWithFormat:@"%@",[self.nameArrayCopy objectAtIndex:nukky]];
+    NSUInteger index =[mut indexOfObject:str];
+    if (index != NSNotFound) {//yes
     
-    [mut addObject:str];
+    }else{//no
+      [mut addObject:str];
+    }
+    
     
     NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
     NSData *data =[NSKeyedArchiver archivedDataWithRootObject:mut];
     [ud setObject:data forKey:@"key"];
     [ud synchronize];
-
-    
+    UIImage *star =[UIImage imageNamed:@"yellowStar@2x-05.png"];
+    [btn setBackgroundImage:star forState:UIControlStateNormal];
+    [cell addSubview:btn];
    }
 -(void)finish{
     NSLog(@"ta");
