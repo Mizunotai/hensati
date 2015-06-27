@@ -182,6 +182,7 @@
     if (!cell) { // yes
         // セルを作成
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        
     }
 //     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -273,7 +274,9 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     UIImage *star =[UIImage imageNamed:@"yellowStar@2x-05.png"];
     [btn setBackgroundImage:star forState:UIControlStateNormal];
     [cell addSubview:btn];
+    
    }
+
 -(void)finish{
     NSLog(@"ta");
     NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
@@ -281,6 +284,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     [ud setObject:data forKey:@"key"];
     [ud synchronize];
    }
+
 
 
 

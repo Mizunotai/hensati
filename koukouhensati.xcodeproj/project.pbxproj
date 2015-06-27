@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B684226A1B2C1D1500F05FBD /* star06@2x-05.png in Resources */ = {isa = PBXBuildFile; fileRef = B68422691B2C1D1500F05FBD /* star06@2x-05.png */; };
-		B684226C1B2C1E1400F05FBD /* yellowStar@2x-05.png in Resources */ = {isa = PBXBuildFile; fileRef = B684226B1B2C1E1400F05FBD /* yellowStar@2x-05.png */; };
 		B69D2FF71AF517FA00440A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF61AF517FA00440A78 /* main.m */; };
 		B69D2FFA1AF517FA00440A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF91AF517FA00440A78 /* AppDelegate.m */; };
 		B69D30001AF517FA00440A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69D2FFE1AF517FA00440A78 /* Main.storyboard */; };
@@ -168,6 +166,9 @@
 		B6BA611C1B075B2B004A5CEE /* 47,2.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA608F1B075B2B004A5CEE /* 47,2.csv */; };
 		B6BA611D1B075B2B004A5CEE /* 47,3.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA60901B075B2B004A5CEE /* 47,3.csv */; };
 		B6CA08551B19866C00FCF5D9 /* FavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CA08541B19866C00FCF5D9 /* FavViewController.m */; };
+		B6CA6FA71B3E7E680068058A /* 設定@2x-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA6FA61B3E7E680068058A /* 設定@2x-04.png */; };
+		B6CA6FAA1B3E7F030068058A /* お気に入り@2x-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA6FA81B3E7F030068058A /* お気に入り@2x-04.png */; };
+		B6CA6FAB1B3E7F030068058A /* 学校@2x-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA6FA91B3E7F030068058A /* 学校@2x-04.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,8 +182,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B68422691B2C1D1500F05FBD /* star06@2x-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star06@2x-05.png"; sourceTree = "<group>"; };
-		B684226B1B2C1E1400F05FBD /* yellowStar@2x-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellowStar@2x-05.png"; sourceTree = "<group>"; };
 		B69D2FF11AF517F900440A78 /* koukouhensati.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = koukouhensati.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69D2FF51AF517F900440A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B69D2FF61AF517FA00440A78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -356,6 +355,9 @@
 		B6BA60901B075B2B004A5CEE /* 47,3.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "47,3.csv"; sourceTree = "<group>"; };
 		B6CA08531B19866C00FCF5D9 /* FavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavViewController.h; sourceTree = "<group>"; };
 		B6CA08541B19866C00FCF5D9 /* FavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavViewController.m; sourceTree = "<group>"; };
+		B6CA6FA61B3E7E680068058A /* 設定@2x-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "設定@2x-04.png"; sourceTree = "<group>"; };
+		B6CA6FA81B3E7F030068058A /* お気に入り@2x-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "お気に入り@2x-04.png"; sourceTree = "<group>"; };
+		B6CA6FA91B3E7F030068058A /* 学校@2x-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学校@2x-04.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,8 +401,9 @@
 		B69D2FF31AF517F900440A78 /* koukouhensati */ = {
 			isa = PBXGroup;
 			children = (
-				B68422691B2C1D1500F05FBD /* star06@2x-05.png */,
-				B684226B1B2C1E1400F05FBD /* yellowStar@2x-05.png */,
+				B6CA6FA81B3E7F030068058A /* お気に入り@2x-04.png */,
+				B6CA6FA91B3E7F030068058A /* 学校@2x-04.png */,
+				B6CA6FA61B3E7E680068058A /* 設定@2x-04.png */,
 				B6BA5FFD1B075B2A004A5CEE /* 高校csvファイル */,
 				B69D30211AF5181E00440A78 /* Library */,
 				B69D301E1AF5181E00440A78 /* ViewController.h */,
@@ -777,6 +780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6BA60BF1B075B2B004A5CEE /* 16,2.csv in Resources */,
+				B6CA6FA71B3E7E680068058A /* 設定@2x-04.png in Resources */,
 				B6BA60DB1B075B2B004A5CEE /* 25,3.csv in Resources */,
 				B6BA611B1B075B2B004A5CEE /* 47,1.csv in Resources */,
 				B6BA60B71B075B2B004A5CEE /* 8,3.csv in Resources */,
@@ -785,7 +789,6 @@
 				B6BA60A21B075B2B004A5CEE /* 6,3.csv in Resources */,
 				B6BA60CE1B075B2B004A5CEE /* 21,2.csv in Resources */,
 				B6BA60CC1B075B2B004A5CEE /* 20,3.csv in Resources */,
-				B684226A1B2C1D1500F05FBD /* star06@2x-05.png in Resources */,
 				B6BA60ED1B075B2B004A5CEE /* 31,3.csv in Resources */,
 				B6BA60C31B075B2B004A5CEE /* 17,3.csv in Resources */,
 				B6BA60A01B075B2B004A5CEE /* 6,1.csv in Resources */,
@@ -810,6 +813,7 @@
 				B6BA60F71B075B2B004A5CEE /* 35,1.csv in Resources */,
 				B6BA60F81B075B2B004A5CEE /* 35,2.csv in Resources */,
 				B6BA60FC1B075B2B004A5CEE /* 36,3.csv in Resources */,
+				B6CA6FAA1B3E7F030068058A /* お気に入り@2x-04.png in Resources */,
 				B6BA60941B075B2B004A5CEE /* 2,1.csv in Resources */,
 				B6BA60F91B075B2B004A5CEE /* 35,3.csv in Resources */,
 				B6BA60921B075B2B004A5CEE /* 1,2.csv in Resources */,
@@ -822,7 +826,6 @@
 				B6BA60C41B075B2B004A5CEE /* 18,1.csv in Resources */,
 				B6BA611D1B075B2B004A5CEE /* 47,3.csv in Resources */,
 				B6BA60D61B075B2B004A5CEE /* 24,1.csv in Resources */,
-				B684226C1B2C1E1400F05FBD /* yellowStar@2x-05.png in Resources */,
 				B6BA60DC1B075B2B004A5CEE /* 26,1.csv in Resources */,
 				B6BA60951B075B2B004A5CEE /* 2,2.csv in Resources */,
 				B6BA60C81B075B2B004A5CEE /* 19,2.csv in Resources */,
@@ -869,6 +872,7 @@
 				B6BA60C11B075B2B004A5CEE /* 17,1.csv in Resources */,
 				B69D30381AF5181E00440A78 /* SVProgressHUD.bundle in Resources */,
 				B6BA60A61B075B2B004A5CEE /* 10,1.csv in Resources */,
+				B6CA6FAB1B3E7F030068058A /* 学校@2x-04.png in Resources */,
 				B6BA60B51B075B2B004A5CEE /* 8,1.csv in Resources */,
 				B6BA61061B075B2B004A5CEE /* 40,1.csv in Resources */,
 				B6BA61121B075B2B004A5CEE /* 44,1.csv in Resources */,

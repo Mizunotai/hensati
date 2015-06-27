@@ -24,9 +24,9 @@
     self.table.delegate = self;
     self.table.dataSource = self;
     
-//    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-//    NSData *data = [ud objectForKey:@"key"];
-//    mut = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    NSData *data = [ud objectForKey:@"key"];
+    mut = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 }
 -(void)viewWillAppear:(BOOL)animated{
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];

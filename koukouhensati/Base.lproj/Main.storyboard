@@ -5,27 +5,27 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Title-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--学校-->
+        <scene sceneID="DdJ-9L-yLP">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="9cA-WV-DSs" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="xqx-Ue-Ojf"/>
+                        <viewControllerLayoutGuide type="bottom" id="PiO-2G-H7J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="wZp-bY-uRL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FTe-DZ-Dw3">
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpf-E2-oK6">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="NhV-Au-6ot"/>
+                                    <outlet property="delegate" destination="9cA-WV-DSs" id="nth-R3-P32"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yXr-Em-3Of">
-                                <rect key="frame" x="0.0" y="68" width="375" height="579"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="kcq-te-2gU">
@@ -39,79 +39,74 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="u0D-A4-iNM"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Title" id="Rar-a4-id0"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="学校" image="学校@2x-04.png" id="0wD-mE-tiM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="O7n-Ic-GG5" id="8pz-tg-JjX"/>
-                        <outlet property="serchBar" destination="FTe-DZ-Dw3" id="Eoo-ZA-M1o"/>
-                        <outlet property="table" destination="yXr-Em-3Of" id="kVX-6l-7PZ"/>
+                        <outlet property="searchDisplayController" destination="LDe-z5-zWd" id="8ap-pO-j93"/>
+                        <outlet property="serchBar" destination="rpf-E2-oK6" id="sks-Fe-0YF"/>
+                        <outlet property="table" destination="yXr-Em-3Of" id="9KI-kU-esn"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="O7n-Ic-GG5">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1i-hj-DmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="LDe-z5-zWd">
                     <connections>
-                        <outlet property="delegate" destination="vXZ-lx-hvc" id="9dA-lP-KEE"/>
-                        <outlet property="searchBar" destination="FTe-DZ-Dw3" id="Pbb-em-lMX"/>
-                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="UoE-RY-71T"/>
-                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="5MR-Mc-FIC"/>
-                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="SEu-SO-edk"/>
+                        <outlet property="delegate" destination="9cA-WV-DSs" id="gRu-4b-oES"/>
+                        <outlet property="searchBar" destination="rpf-E2-oK6" id="cU7-rf-jcl"/>
+                        <outlet property="searchContentsController" destination="9cA-WV-DSs" id="mjX-UG-1hc"/>
+                        <outlet property="searchResultsDataSource" destination="9cA-WV-DSs" id="HvW-SQ-Jpq"/>
+                        <outlet property="searchResultsDelegate" destination="9cA-WV-DSs" id="83I-FY-Ae0"/>
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="216.5" y="416.5"/>
+            <point key="canvasLocation" x="-857.5" y="507.5"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="JMt-qP-0Do">
+        <!--設定-->
+        <scene sceneID="Bge-gi-sDp">
             <objects>
-                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3nh-xH-FfH" customClass="MenuViewController" sceneMemberID="viewController">
+                <viewController id="vPk-NX-yt8" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nst-W0-BtX"/>
-                        <viewControllerLayoutGuide type="bottom" id="fa3-ii-jeH"/>
+                        <viewControllerLayoutGuide type="top" id="M8m-a0-b7w"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bnu-IV-GaN"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="n1r-Yr-6Cc">
+                    <view key="view" contentMode="scaleToFill" id="HrN-Cs-ol9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="公立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlV-B7-grT">
-                                <rect key="frame" x="84" y="288" width="34" height="21"/>
+                                <rect key="frame" x="84" y="293" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="私立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41x-Dd-pmv">
-                                <rect key="frame" x="84" y="344" width="34" height="21"/>
+                                <rect key="frame" x="84" y="349" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="合同" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-2y-eJh">
-                                <rect key="frame" x="84" y="403" width="34" height="21"/>
+                                <rect key="frame" x="84" y="408" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fco-Q2-Ohi">
-                                <rect key="frame" x="0.0" y="66" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="71" width="375" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="7gM-TL-2xu"/>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="設定" image="設定@2x-04.png" id="scZ-D7-Aoi"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="picker" destination="fco-Q2-Ohi" id="Kei-gx-bcI"/>
+                        <outlet property="picker" destination="fco-Q2-Ohi" id="1J7-rN-QI5"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i5E-0k-y6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vx-4Z-lU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623.5" y="442.5"/>
+            <point key="canvasLocation" x="-185" y="369"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2Qz-MM-VhJ">
@@ -125,16 +120,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="Fqc-RS-P9a"/>
-                        <segue destination="3nh-xH-FfH" kind="relationship" relationship="viewControllers" id="6ro-ir-ycs"/>
-                        <segue destination="CRV-tC-aHG" kind="relationship" relationship="viewControllers" id="88y-Cv-yT5"/>
+                        <segue destination="vPk-NX-yt8" kind="relationship" relationship="viewControllers" id="ohm-t8-ZwG"/>
+                        <segue destination="9cA-WV-DSs" kind="relationship" relationship="viewControllers" id="HoT-MU-GF9"/>
+                        <segue destination="CRV-tC-aHG" kind="relationship" relationship="viewControllers" id="At3-dU-vQy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwT-wH-kiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-251.5" y="1101.5"/>
+            <point key="canvasLocation" x="-473.5" y="1407.5"/>
         </scene>
-        <!--Item-->
+        <!--お気に入り-->
         <scene sceneID="WIY-j3-gKc">
             <objects>
                 <viewController id="CRV-tC-aHG" customClass="FavViewController" sceneMemberID="viewController">
@@ -162,7 +157,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="WC7-7b-1zk"/>
+                    <tabBarItem key="tabBarItem" title="お気に入り" image="お気に入り@2x-04.png" id="WC7-7b-1zk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="table" destination="VMo-iy-Q8s" id="yr6-2r-gxd"/>
@@ -210,4 +205,9 @@
             <point key="canvasLocation" x="789.5" y="1272.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="お気に入り@2x-04.png" width="45" height="45"/>
+        <image name="学校@2x-04.png" width="45" height="45"/>
+        <image name="設定@2x-04.png" width="45" height="45"/>
+    </resources>
 </document>
