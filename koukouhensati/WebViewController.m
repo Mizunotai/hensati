@@ -58,6 +58,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 /**
  * 左スワイプがされたとき
  */
@@ -66,11 +67,24 @@
     NSLog(@"左スワイプがされました．");
     [web goForward];
 }
+-(IBAction)goback:(id)sender{
+    [web goBack];
+}-(IBAction)goForWard:(id)sender{
+    [web goForward];
+}
 -(IBAction)back:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+// ページ読込開始時にインジケータをくるくるさせる
+-(void)webViewDidStartLoad:(UIWebView*)webView{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+}
 
+// ページ読込完了時にインジケータを非表示にする
+-(void)webViewDidFinishLoad:(UIWebView*)webView{
+    [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
+}
 /*
 #pragma mark - Navigation
 

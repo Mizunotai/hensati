@@ -169,6 +169,8 @@
 		B6CA6FA71B3E7E680068058A /* 設定@2x-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA6FA61B3E7E680068058A /* 設定@2x-04.png */; };
 		B6CA6FAA1B3E7F030068058A /* お気に入り@2x-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA6FA81B3E7F030068058A /* お気に入り@2x-04.png */; };
 		B6CA6FAB1B3E7F030068058A /* 学校@2x-04.png in Resources */ = {isa = PBXBuildFile; fileRef = B6CA6FA91B3E7F030068058A /* 学校@2x-04.png */; };
+		B6E47AA91B50F6EB00ECFC96 /* 左矢印@2x-03.png in Resources */ = {isa = PBXBuildFile; fileRef = B6E47AA81B50F6EB00ECFC96 /* 左矢印@2x-03.png */; };
+		B6E47AAB1B50F76500ECFC96 /* 右矢印@2x-03.png in Resources */ = {isa = PBXBuildFile; fileRef = B6E47AAA1B50F76500ECFC96 /* 右矢印@2x-03.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -358,6 +360,8 @@
 		B6CA6FA61B3E7E680068058A /* 設定@2x-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "設定@2x-04.png"; sourceTree = "<group>"; };
 		B6CA6FA81B3E7F030068058A /* お気に入り@2x-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "お気に入り@2x-04.png"; sourceTree = "<group>"; };
 		B6CA6FA91B3E7F030068058A /* 学校@2x-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "学校@2x-04.png"; sourceTree = "<group>"; };
+		B6E47AA81B50F6EB00ECFC96 /* 左矢印@2x-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "左矢印@2x-03.png"; path = "../左矢印@2x-03.png"; sourceTree = "<group>"; };
+		B6E47AAA1B50F76500ECFC96 /* 右矢印@2x-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "右矢印@2x-03.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +405,8 @@
 		B69D2FF31AF517F900440A78 /* koukouhensati */ = {
 			isa = PBXGroup;
 			children = (
+				B6E47AAA1B50F76500ECFC96 /* 右矢印@2x-03.png */,
+				B6E47AA81B50F6EB00ECFC96 /* 左矢印@2x-03.png */,
 				B6CA6FA81B3E7F030068058A /* お気に入り@2x-04.png */,
 				B6CA6FA91B3E7F030068058A /* 学校@2x-04.png */,
 				B6CA6FA61B3E7E680068058A /* 設定@2x-04.png */,
@@ -888,6 +894,7 @@
 				B6BA609E1B075B2B004A5CEE /* 5,2.csv in Resources */,
 				B6BA60AA1B075B2B004A5CEE /* 11,2.csv in Resources */,
 				B6BA609F1B075B2B004A5CEE /* 5,3.csv in Resources */,
+				B6E47AA91B50F6EB00ECFC96 /* 左矢印@2x-03.png in Resources */,
 				B6BA60CB1B075B2B004A5CEE /* 20,2.csv in Resources */,
 				B69D30051AF517FA00440A78 /* LaunchScreen.xib in Resources */,
 				B6BA60B11B075B2B004A5CEE /* 13,3.csv in Resources */,
@@ -921,6 +928,7 @@
 				B6BA60F61B075B2B004A5CEE /* 34,3.csv in Resources */,
 				B6BA60AD1B075B2B004A5CEE /* 12,2.csv in Resources */,
 				B6BA61181B075B2B004A5CEE /* 46,1.csv in Resources */,
+				B6E47AAB1B50F76500ECFC96 /* 右矢印@2x-03.png in Resources */,
 				B6BA60971B075B2B004A5CEE /* 3,1.csv in Resources */,
 				B6BA60B91B075B2B004A5CEE /* 9,2.csv in Resources */,
 				B6BA60B41B075B2B004A5CEE /* 14,3.csv in Resources */,

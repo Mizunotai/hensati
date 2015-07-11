@@ -275,10 +275,8 @@
                 break;
             }
             case 1:
-                
-                
                 if (searchBool == YES) {
-                    string = [NSString stringWithFormat:@"%@",[farstSerchhResolt objectAtIndex:nukky]];
+                    string = [NSString stringWithFormat:@"%@",[_serchResolt objectAtIndex:nukky]];
                 }else if(searchBool == NO){
                     string =[NSString stringWithFormat:@"%@",[farstNameArray objectAtIndex:nukky]];
                     NSLog(@"%@",string);
@@ -286,7 +284,7 @@
                     
 
                 }
-                WebViewController *webViewController =[self.storyboard instantiateViewControllerWithIdentifier:@"web"];
+                ViewController *webViewController =[self.storyboard instantiateViewControllerWithIdentifier:@"web"];
                 [self presentViewController:webViewController animated:YES completion:nil];
                 
         }
