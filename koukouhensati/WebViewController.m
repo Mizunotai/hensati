@@ -45,6 +45,7 @@
     // ビューにジェスチャーを追加
     [self.view addGestureRecognizer:swipeLeftGesture];
     
+    
 }
 /**
  * 右スワイプがされたとき

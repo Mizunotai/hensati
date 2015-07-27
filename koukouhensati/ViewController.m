@@ -155,7 +155,7 @@
     [_table reloadData];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finish) name:UIApplicationWillResignActiveNotification object:nil];
-
+    NSLog(@"%d,%d",mizuno,taiki);
 }
 
 
@@ -188,7 +188,7 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         
     }
-    //     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+   
     
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         cell.textLabel.text = [self.serchResolt objectAtIndex:indexPath.row];
@@ -198,16 +198,6 @@
     return cell;
     
 }
-
-
-
-//-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-//    NSString *title = @"title";
-//    return title;
-//}
-
-
-
 
 -(void)filterContentForSearchText:(NSString *)serchText scope:(NSString *)scope{
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@",serchText];
@@ -245,7 +235,6 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (al == alertView) {
         
-//        nukky = [_table indexPathForCell:cell].row;
         NSLog(@"%d",nukky);
         switch (buttonIndex) {
             case 0:
@@ -291,13 +280,7 @@
     }
     
 }
--(void)btnpush:(id)sender{
-    
-    //    UIButton *button = (UIButton *)sender;
-    //    UITableViewCell *cell = (UITableViewCell *)[button superview];
-    
-    
-}
+
 
 -(void)finish{
     NSLog(@"ta");

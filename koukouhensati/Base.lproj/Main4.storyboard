@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mOl-7d-ePd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mOl-7d-ePd">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -10,22 +10,22 @@
             <objects>
                 <viewController id="9cA-WV-DSs" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xqx-Ue-Ojf"/>
-                        <viewControllerLayoutGuide type="bottom" id="PiO-2G-H7J"/>
+                        <viewControllerLayoutGuide type="top" id="VxH-xq-bTb"/>
+                        <viewControllerLayoutGuide type="bottom" id="kvw-0H-2xD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wZp-bY-uRL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpf-E2-oK6">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="9cA-WV-DSs" id="nth-R3-P32"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yXr-Em-3Of">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="kcq-te-2gU">
@@ -42,7 +42,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="学校" image="学校@2x-04.png" id="0wD-mE-tiM"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="searchDisplayController" destination="LDe-z5-zWd" id="8ap-pO-j93"/>
                         <outlet property="serchBar" destination="rpf-E2-oK6" id="sks-Fe-0YF"/>
@@ -60,60 +60,42 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-857.5" y="507.5"/>
+            <point key="canvasLocation" x="-576" y="364"/>
         </scene>
         <!--設定-->
         <scene sceneID="Bge-gi-sDp">
             <objects>
                 <viewController id="vPk-NX-yt8" customClass="MenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="M8m-a0-b7w"/>
-                        <viewControllerLayoutGuide type="bottom" id="Bnu-IV-GaN"/>
+                        <viewControllerLayoutGuide type="top" id="jbn-Ny-zAj"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2a-tQ-POe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HrN-Cs-ol9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="公立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlV-B7-grT">
-                                <rect key="frame" x="84" y="293" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="私立" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41x-Dd-pmv">
-                                <rect key="frame" x="84" y="349" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="合同" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eB-2y-eJh">
-                                <rect key="frame" x="84" y="408" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fco-Q2-Ohi">
-                                <rect key="frame" x="0.0" y="71" width="375" height="162"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="162"/>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" image="設定@2x-04.png" id="scZ-D7-Aoi"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="picker" destination="fco-Q2-Ohi" id="1J7-rN-QI5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vx-4Z-lU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-185" y="369"/>
+            <point key="canvasLocation" x="-99" y="349"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2Qz-MM-VhJ">
             <objects>
                 <tabBarController id="mOl-7d-ePd" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="pZ0-fv-ob0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -127,22 +109,22 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VwT-wH-kiX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-473.5" y="1407.5"/>
+            <point key="canvasLocation" x="-444" y="1295"/>
         </scene>
         <!--お気に入り-->
         <scene sceneID="WIY-j3-gKc">
             <objects>
                 <viewController id="CRV-tC-aHG" customClass="FavViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7lU-RQ-ZbD"/>
-                        <viewControllerLayoutGuide type="bottom" id="7a2-Mj-hPF"/>
+                        <viewControllerLayoutGuide type="top" id="ccq-5D-GX1"/>
+                        <viewControllerLayoutGuide type="bottom" id="WjT-Xd-DAR"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yJX-4z-Ce3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VMo-iy-Q8s">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="5ga-rN-tXt">
@@ -158,42 +140,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="お気に入り" image="お気に入り@2x-04.png" id="WC7-7b-1zk"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="table" destination="VMo-iy-Q8s" id="yr6-2r-gxd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbr-fK-lmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="280.5" y="1272.5"/>
+            <point key="canvasLocation" x="149" y="1204"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="kAs-pd-V4Y">
             <objects>
                 <viewController storyboardIdentifier="web" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Rgo-NG-bOc" customClass="WebViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="95a-R3-Xip"/>
-                        <viewControllerLayoutGuide type="bottom" id="rTz-H4-Vmc"/>
+                        <viewControllerLayoutGuide type="top" id="OuP-el-UWH"/>
+                        <viewControllerLayoutGuide type="bottom" id="gHz-fc-ycM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xub-GT-HnR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2YX-Sm-YDd">
-                                <rect key="frame" x="0.0" y="52" width="375" height="615"/>
+                                <rect key="frame" x="0.0" y="47" width="320" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deF-Do-7X0">
-                                <rect key="frame" x="16" y="20" width="30" height="30"/>
-                                <state key="normal" title="戻る">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="Rgo-NG-bOc" eventType="touchUpInside" id="iyn-GF-q8h"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0R-4U-Wvx">
-                                <rect key="frame" x="304" y="617" width="55" height="30"/>
+                                <rect key="frame" x="265" y="530" width="55" height="30"/>
                                 <state key="normal" backgroundImage="右矢印@2x-03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -202,7 +175,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="274-zY-Pg0">
-                                <rect key="frame" x="16" y="617" width="55" height="30"/>
+                                <rect key="frame" x="4" y="530" width="55" height="30"/>
                                 <state key="normal" backgroundImage="左矢印@2x-03.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -210,17 +183,26 @@
                                     <action selector="goback:" destination="Rgo-NG-bOc" eventType="touchUpInside" id="7es-4C-vV4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deF-Do-7X0">
+                                <rect key="frame" x="4" y="9" width="39" height="30"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Rgo-NG-bOc" eventType="touchUpInside" id="iyn-GF-q8h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="web" destination="2YX-Sm-YDd" id="9XQ-gp-Sc8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gU-el-3BG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353.5" y="540.5"/>
+            <point key="canvasLocation" x="289" y="475"/>
         </scene>
     </scenes>
     <resources>
@@ -230,4 +212,9 @@
         <image name="左矢印@2x-03.png" width="500" height="276"/>
         <image name="設定@2x-04.png" width="45" height="45"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

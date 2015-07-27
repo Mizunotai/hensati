@@ -32,6 +32,7 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSData *data = [ud objectForKey:@"key"];
     array = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(finish) name:UIApplicationWillResignActiveNotification object:nil];
 }
 /*セル数*/
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -58,7 +59,16 @@
 
         
         [_table reloadData];
+        NSUserDefaults *ud =[NSUserDefaults standardUserDefaults];
+        NSData *data =[NSKeyedArchiver archivedDataWithRootObject:array];
+        [ud setObject:data forKey:@"key"];
+        [ud synchronize];
     }
+}
+-(void)finish{
+    NSLog(@"ta");
+   
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uYj-Wh-C45">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--学校-->
+        <scene sceneID="szB-Mt-ama">
+            <objects>
+                <viewController id="0S7-R3-IWd" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Obc-kq-pc3"/>
+                        <viewControllerLayoutGuide type="bottom" id="c2h-Nn-XUN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KKV-TZ-USN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OIp-L9-KAa">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0S7-R3-IWd" id="76t-OW-iSq"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QQ9-lR-Ahw">
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" id="2zy-Oh-U4q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2zy-Oh-U4q" id="GTN-gh-tTD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="学校" image="学校@2x-04.png" id="EWn-HU-ANV"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="es7-U5-ngd" id="pK3-Ph-1LG"/>
+                        <outlet property="serchBar" destination="OIp-L9-KAa" id="KGl-DC-BOp"/>
+                        <outlet property="table" destination="QQ9-lR-Ahw" id="uit-x1-L3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ks-TY-J0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="es7-U5-ngd">
+                    <connections>
+                        <outlet property="delegate" destination="0S7-R3-IWd" id="gLO-hT-sWJ"/>
+                        <outlet property="searchBar" destination="OIp-L9-KAa" id="LeG-NT-OgX"/>
+                        <outlet property="searchContentsController" destination="0S7-R3-IWd" id="IST-j5-8CZ"/>
+                        <outlet property="searchResultsDataSource" destination="0S7-R3-IWd" id="g9u-c2-TDJ"/>
+                        <outlet property="searchResultsDelegate" destination="0S7-R3-IWd" id="7z9-k2-d7E"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="-608" y="648"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="vBE-5P-5E6">
+            <objects>
+                <viewController id="J5x-zx-5Mr" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IuA-M1-6ev"/>
+                        <viewControllerLayoutGuide type="bottom" id="F4v-DE-btM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dff-jJ-uDj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPR-FO-Q7e">
+                                <rect key="frame" x="0.0" y="63" width="320" height="162"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="設定@2x-04.png" id="S27-QO-w8O"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="picker" destination="YPR-FO-Q7e" id="abn-RE-klf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wa8-Ol-fSk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99" y="349"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="1y9-25-XXH">
+            <objects>
+                <tabBarController id="uYj-Wh-C45" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="l1h-2m-9Jj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="J5x-zx-5Mr" kind="relationship" relationship="viewControllers" id="WkF-mY-872"/>
+                        <segue destination="0S7-R3-IWd" kind="relationship" relationship="viewControllers" id="NzX-Ew-As3"/>
+                        <segue destination="ATn-Qn-OjJ" kind="relationship" relationship="viewControllers" id="hAZ-lV-tZ4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rh-dA-SJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-444" y="1295"/>
+        </scene>
+        <!--お気に入り-->
+        <scene sceneID="kdZ-2i-koC">
+            <objects>
+                <viewController id="ATn-Qn-OjJ" customClass="FavViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dCR-Rx-6K2"/>
+                        <viewControllerLayoutGuide type="bottom" id="BOl-ja-1uI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WBI-aE-Q4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="F2h-gZ-BN7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="SvR-Nc-m5q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SvR-Nc-m5q" id="k1S-Pg-WEd">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="お気に入り" image="お気に入り@2x-04.png" id="zsm-R1-Pg9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="table" destination="F2h-gZ-BN7" id="Uor-is-5TM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBa-3K-Rwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149" y="1204"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="Uvc-QX-FuI">
+            <objects>
+                <viewController storyboardIdentifier="web" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TWD-fH-b0R" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FJR-eC-bHT"/>
+                        <viewControllerLayoutGuide type="bottom" id="aSh-mW-aR6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OoM-uf-qoW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYy-An-peQ">
+                                <rect key="frame" x="4" y="9" width="39" height="30"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="TWD-fH-b0R" eventType="touchUpInside" id="rMw-FF-0f8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-8o-oXL">
+                                <rect key="frame" x="265" y="430" width="55" height="30"/>
+                                <state key="normal" backgroundImage="右矢印@2x-03.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goForWard:" destination="TWD-fH-b0R" eventType="touchUpInside" id="Qyi-JB-bWA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd1-6k-r4a">
+                                <rect key="frame" x="4" y="430" width="55" height="30"/>
+                                <state key="normal" backgroundImage="左矢印@2x-03.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goback:" destination="TWD-fH-b0R" eventType="touchUpInside" id="8tj-t1-H9n"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rnf-Nn-sFc">
+                                <rect key="frame" x="0.0" y="55" width="320" height="425"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="web" destination="Rnf-Nn-sFc" id="WbA-mP-YYH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvV-5J-cv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="475"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="お気に入り@2x-04.png" width="45" height="45"/>
+        <image name="右矢印@2x-03.png" width="2792" height="1542"/>
+        <image name="学校@2x-04.png" width="45" height="45"/>
+        <image name="左矢印@2x-03.png" width="500" height="276"/>
+        <image name="設定@2x-04.png" width="45" height="45"/>
+    </resources>
+</document>

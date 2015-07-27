@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B69D2FF71AF517FA00440A78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF61AF517FA00440A78 /* main.m */; };
 		B69D2FFA1AF517FA00440A78 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D2FF91AF517FA00440A78 /* AppDelegate.m */; };
-		B69D30001AF517FA00440A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69D2FFE1AF517FA00440A78 /* Main.storyboard */; };
+		B69D30001AF517FA00440A78 /* Main4.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69D2FFE1AF517FA00440A78 /* Main4.storyboard */; };
 		B69D30021AF517FA00440A78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69D30011AF517FA00440A78 /* Images.xcassets */; };
 		B69D30051AF517FA00440A78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B69D30031AF517FA00440A78 /* LaunchScreen.xib */; };
 		B69D30111AF517FA00440A78 /* koukouhensatiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30101AF517FA00440A78 /* koukouhensatiTests.m */; };
@@ -22,6 +22,8 @@
 		B69D303A1AF5181E00440A78 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302C1AF5181E00440A78 /* LICENSE.md */; };
 		B69D303B1AF5181E00440A78 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B69D302D1AF5181E00440A78 /* README.md */; };
 		B69D303C1AF5181E00440A78 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */; };
+		B69FB98E1B661614006F7DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69FB98D1B661614006F7DC5 /* Main.storyboard */; };
+		B69FB9901B661761006F7DC5 /* ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69FB98F1B661761006F7DC5 /* ipad.storyboard */; };
 		B6BA5DB01AF73572004A5CEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */; };
 		B6BA5ED91B073956004A5CEE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA5ED81B073956004A5CEE /* WebViewController.m */; };
 		B6BA60911B075B2B004A5CEE /* 1,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5FFF1B075B2A004A5CEE /* 1,1.csv */; };
@@ -189,7 +191,7 @@
 		B69D2FF61AF517FA00440A78 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B69D2FF81AF517FA00440A78 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B69D2FF91AF517FA00440A78 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B69D2FFF1AF517FA00440A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B69D2FFF1AF517FA00440A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main4.storyboard; sourceTree = "<group>"; };
 		B69D30011AF517FA00440A78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B69D30041AF517FA00440A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B69D300A1AF517FA00440A78 /* koukouhensatiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = koukouhensatiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +213,8 @@
 		B69D302D1AF5181E00440A78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B69D302F1AF5181E00440A78 /* UIColor+BFPaperColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BFPaperColors.h"; sourceTree = "<group>"; };
 		B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
+		B69FB98D1B661614006F7DC5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		B69FB98F1B661761006F7DC5 /* ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ipad.storyboard; path = ../ipad.storyboard; sourceTree = "<group>"; };
 		B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B6BA5ED71B073956004A5CEE /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		B6BA5ED81B073956004A5CEE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -423,7 +427,9 @@
 				B69D2FF81AF517FA00440A78 /* AppDelegate.h */,
 				B69D2FF91AF517FA00440A78 /* AppDelegate.m */,
 				B69D30031AF517FA00440A78 /* LaunchScreen.xib */,
-				B69D2FFE1AF517FA00440A78 /* Main.storyboard */,
+				B69D2FFE1AF517FA00440A78 /* Main4.storyboard */,
+				B69FB98D1B661614006F7DC5 /* Main.storyboard */,
+				B69FB98F1B661761006F7DC5 /* ipad.storyboard */,
 				B69D30011AF517FA00440A78 /* Images.xcassets */,
 				B69D2FF41AF517F900440A78 /* Supporting Files */,
 			);
@@ -872,10 +878,12 @@
 				B6BA60AB1B075B2B004A5CEE /* 11,3.csv in Resources */,
 				B6BA611A1B075B2B004A5CEE /* 46,3.csv in Resources */,
 				B6BA60C61B075B2B004A5CEE /* 18,3.csv in Resources */,
+				B69FB98E1B661614006F7DC5 /* Main.storyboard in Resources */,
 				B6BA61131B075B2B004A5CEE /* 44,2.csv in Resources */,
 				B6BA61001B075B2B004A5CEE /* 38,1.csv in Resources */,
 				B6BA610B1B075B2B004A5CEE /* 41,3.csv in Resources */,
 				B6BA60C11B075B2B004A5CEE /* 17,1.csv in Resources */,
+				B69FB9901B661761006F7DC5 /* ipad.storyboard in Resources */,
 				B69D30381AF5181E00440A78 /* SVProgressHUD.bundle in Resources */,
 				B6BA60A61B075B2B004A5CEE /* 10,1.csv in Resources */,
 				B6CA6FAB1B3E7F030068058A /* 学校@2x-04.png in Resources */,
@@ -890,7 +898,7 @@
 				B6BA60D21B075B2B004A5CEE /* 22,3.csv in Resources */,
 				B6BA60D91B075B2B004A5CEE /* 25,1.csv in Resources */,
 				B6BA60DD1B075B2B004A5CEE /* 26,2.csv in Resources */,
-				B69D30001AF517FA00440A78 /* Main.storyboard in Resources */,
+				B69D30001AF517FA00440A78 /* Main4.storyboard in Resources */,
 				B6BA609E1B075B2B004A5CEE /* 5,2.csv in Resources */,
 				B6BA60AA1B075B2B004A5CEE /* 11,2.csv in Resources */,
 				B6BA609F1B075B2B004A5CEE /* 5,3.csv in Resources */,
@@ -986,12 +994,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B69D2FFE1AF517FA00440A78 /* Main.storyboard */ = {
+		B69D2FFE1AF517FA00440A78 /* Main4.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B69D2FFF1AF517FA00440A78 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main4.storyboard;
 			sourceTree = "<group>";
 		};
 		B69D30031AF517FA00440A78 /* LaunchScreen.xib */ = {

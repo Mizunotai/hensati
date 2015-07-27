@@ -18,12 +18,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     checkBox=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45,270,40,40)];
+    UILabel *label1 =[[UILabel alloc]initWithFrame:CGRectMake(84, 280, 35, 21)];
+    label1.text =@"公立";
+    [self.view addSubview:label1];
     checkBox2=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45, 330, 40, 40)];
+    UILabel *label2 =[[UILabel alloc]initWithFrame:CGRectMake(84, 340, 35, 21)];
+    label2.text = @"私立";
+    [self.view addSubview:label2];
     checkBox3=[[BFPaperCheckbox alloc]initWithFrame:CGRectMake(45, 390, 40, 40)];
+    UILabel *label3 = [[UILabel alloc]initWithFrame:CGRectMake(84, 400, 35, 21)];
+    label3.text =@"合同";
+    [self.view addSubview:label3];
     [self.view addSubview:checkBox];
     [self.view addSubview:checkBox2];
     [self.view addSubview:checkBox3];
-//    NSLog(@"ホームda:%d",taiki);
+
     UIBarButtonItem *barButton = [[UIBarButtonItem alloc] init];
     barButton.title = @"戻る";
     self.navigationItem.backBarButtonItem = barButton;
