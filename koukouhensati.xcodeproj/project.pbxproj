@@ -24,6 +24,10 @@
 		B69D303C1AF5181E00440A78 /* UIColor+BFPaperColors.m in Sources */ = {isa = PBXBuildFile; fileRef = B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */; };
 		B69FB98E1B661614006F7DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69FB98D1B661614006F7DC5 /* Main.storyboard */; };
 		B69FB9901B661761006F7DC5 /* ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69FB98F1B661761006F7DC5 /* ipad.storyboard */; };
+		B69FB9921B66FE36006F7DC5 /* Mine6.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69FB9911B66FE36006F7DC5 /* Mine6.storyboard */; };
+		B69FB9971B670FD8006F7DC5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69FB9941B670FD8006F7DC5 /* Default-568h@2x.png */; };
+		B69FB9981B670FD8006F7DC5 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69FB9951B670FD8006F7DC5 /* Default-667h@2x.png */; };
+		B69FB9991B670FD8006F7DC5 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B69FB9961B670FD8006F7DC5 /* Default-736h@3x.png */; };
 		B6BA5DB01AF73572004A5CEE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */; };
 		B6BA5ED91B073956004A5CEE /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BA5ED81B073956004A5CEE /* WebViewController.m */; };
 		B6BA60911B075B2B004A5CEE /* 1,1.csv in Resources */ = {isa = PBXBuildFile; fileRef = B6BA5FFF1B075B2A004A5CEE /* 1,1.csv */; };
@@ -215,6 +219,10 @@
 		B69D30301AF5181E00440A78 /* UIColor+BFPaperColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BFPaperColors.m"; sourceTree = "<group>"; };
 		B69FB98D1B661614006F7DC5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		B69FB98F1B661761006F7DC5 /* ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ipad.storyboard; path = ../ipad.storyboard; sourceTree = "<group>"; };
+		B69FB9911B66FE36006F7DC5 /* Mine6.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mine6.storyboard; path = ../Mine6.storyboard; sourceTree = "<group>"; };
+		B69FB9941B670FD8006F7DC5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B69FB9951B670FD8006F7DC5 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		B69FB9961B670FD8006F7DC5 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B6BA5ED71B073956004A5CEE /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		B6BA5ED81B073956004A5CEE /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
@@ -390,6 +398,7 @@
 		B69D2FE81AF517F900440A78 = {
 			isa = PBXGroup;
 			children = (
+				B69FB9931B670FD8006F7DC5 /* Defaults-master */,
 				B6BA5DAF1AF73572004A5CEE /* QuartzCore.framework */,
 				B69D2FF31AF517F900440A78 /* koukouhensati */,
 				B69D300D1AF517FA00440A78 /* koukouhensatiTests */,
@@ -427,9 +436,10 @@
 				B69D2FF81AF517FA00440A78 /* AppDelegate.h */,
 				B69D2FF91AF517FA00440A78 /* AppDelegate.m */,
 				B69D30031AF517FA00440A78 /* LaunchScreen.xib */,
-				B69D2FFE1AF517FA00440A78 /* Main4.storyboard */,
 				B69FB98D1B661614006F7DC5 /* Main.storyboard */,
 				B69FB98F1B661761006F7DC5 /* ipad.storyboard */,
+				B69D2FFE1AF517FA00440A78 /* Main4.storyboard */,
+				B69FB9911B66FE36006F7DC5 /* Mine6.storyboard */,
 				B69D30011AF517FA00440A78 /* Images.xcassets */,
 				B69D2FF41AF517F900440A78 /* Supporting Files */,
 			);
@@ -512,6 +522,16 @@
 				B69D30231AF5181E00440A78 /* BFPaperCheckbox.m */,
 			);
 			name = BFPaperCheckBox;
+			sourceTree = "<group>";
+		};
+		B69FB9931B670FD8006F7DC5 /* Defaults-master */ = {
+			isa = PBXGroup;
+			children = (
+				B69FB9941B670FD8006F7DC5 /* Default-568h@2x.png */,
+				B69FB9951B670FD8006F7DC5 /* Default-667h@2x.png */,
+				B69FB9961B670FD8006F7DC5 /* Default-736h@3x.png */,
+			);
+			path = "Defaults-master";
 			sourceTree = "<group>";
 		};
 		B6BA5FFD1B075B2A004A5CEE /* 高校csvファイル */ = {
@@ -815,6 +835,7 @@
 				B6BA60991B075B2B004A5CEE /* 3,3.csv in Resources */,
 				B6BA60C91B075B2B004A5CEE /* 19,3.csv in Resources */,
 				B6BA61191B075B2B004A5CEE /* 46,2.csv in Resources */,
+				B69FB9921B66FE36006F7DC5 /* Mine6.storyboard in Resources */,
 				B6BA60F31B075B2B004A5CEE /* 33,3.csv in Resources */,
 				B6BA60C01B075B2B004A5CEE /* 16,3.csv in Resources */,
 				B6BA60F51B075B2B004A5CEE /* 34,2.csv in Resources */,
@@ -844,6 +865,7 @@
 				B6BA60B21B075B2B004A5CEE /* 14,1.csv in Resources */,
 				B6BA60D31B075B2B004A5CEE /* 23,1.csv in Resources */,
 				B6BA60FF1B075B2B004A5CEE /* 37,3.csv in Resources */,
+				B69FB9981B670FD8006F7DC5 /* Default-667h@2x.png in Resources */,
 				B6BA60E81B075B2B004A5CEE /* 30,1.csv in Resources */,
 				B6BA61171B075B2B004A5CEE /* 45,3.csv in Resources */,
 				B6BA61031B075B2B004A5CEE /* 39,1.csv in Resources */,
@@ -872,6 +894,7 @@
 				B6BA60C21B075B2B004A5CEE /* 17,2.csv in Resources */,
 				B6BA610C1B075B2B004A5CEE /* 42,1.csv in Resources */,
 				B6BA60EB1B075B2B004A5CEE /* 31,1.csv in Resources */,
+				B69FB9991B670FD8006F7DC5 /* Default-736h@3x.png in Resources */,
 				B6BA60E51B075B2B004A5CEE /* 29,1.csv in Resources */,
 				B6BA610E1B075B2B004A5CEE /* 42,3.csv in Resources */,
 				B6BA60D51B075B2B004A5CEE /* 23,3.csv in Resources */,
@@ -879,6 +902,7 @@
 				B6BA611A1B075B2B004A5CEE /* 46,3.csv in Resources */,
 				B6BA60C61B075B2B004A5CEE /* 18,3.csv in Resources */,
 				B69FB98E1B661614006F7DC5 /* Main.storyboard in Resources */,
+				B69FB9971B670FD8006F7DC5 /* Default-568h@2x.png in Resources */,
 				B6BA61131B075B2B004A5CEE /* 44,2.csv in Resources */,
 				B6BA61001B075B2B004A5CEE /* 38,1.csv in Resources */,
 				B6BA610B1B075B2B004A5CEE /* 41,3.csv in Resources */,
@@ -1095,7 +1119,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = koukouhensati/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1107,7 +1131,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = koukouhensati/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

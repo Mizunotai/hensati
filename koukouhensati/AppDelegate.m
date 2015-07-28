@@ -34,7 +34,8 @@
             NSLog(@"New iPhone");
             storyBoardName = @"Main4";
         }
-    }else{
+    }
+        else{
         NSLog(@"iPad");
         storyBoardName = @"ipad";
     }
